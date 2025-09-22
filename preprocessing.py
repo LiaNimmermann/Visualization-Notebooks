@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import matplotlib.pyplot as plt
 import numpy as np
-from mmseg.registry import MODELS
+#from mmseg.registry import MODELS
 import os
 import matplotlib.image as mpimage
 import torchvision.utils as vutils
@@ -116,7 +116,7 @@ def save_image(image_tensor, where, save_name, channels, path, training):
 
     plt.close()
 
-@MODELS.register_module()
+#@MODELS.register_module()
 class BlurPreprocessing(nn.Module):
     def __init__(self, blur_bool, blur_depth, single_color, color_opponency, channels, path, training, black_white):
         super().__init__()
