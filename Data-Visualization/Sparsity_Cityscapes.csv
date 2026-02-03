@@ -1,0 +1,25 @@
+Architecture,Preprocessing,Depth,Channels,mIoU,mAcc,aAcc
+Deeplabv3+,-,0,3,66.68±0.44,76.58±0.60,94.68±0.05
+Deeplabv3+,grayscale green bias,0,1,65.14±2.13,75.94±2.88,94.42±0.16
+Deeplabv3+,grayscale,0,1,66.02±2.18,76.76±2.09,94.47±0.27
+Deeplabv3+,grayscale green bias,0,3,64.97±1.19,75.34±1.28,94.31±0.13
+Deeplabv3+,grayscale,0,3,63.25±2.45,73.53±3.16,94.03±0.40
+Deeplabv3+,grayscale,5,3,66.53±1.11,77.86±0.63,94.35±0.35
+Deeplabv3+,color-opponency,5,3,66.64±1.39,75.80±1.46,94.88±0.15
+Deeplabv3+,single-color,5,3,66.08±3.05,76.33±3.03,94.90±0.16
+SegFormer,-,0,3,73.86±0.29,82.58±0.59,95.36±0.03
+SegFormer,grayscale green bias,0,1,70.25±0.16,79.57±0.21,94.75±0.02
+SegFormer,grayscale,0,1,71.13±0.23,80.50±0.22,94.81±0.06
+SegFormer,grayscale green bias,0,3,71.03±0.56,80.37±0.36,94.76±0.03
+SegFormer,grayscale,0,3,71.19±0.32,80.56±0.18,94.82±0.06
+SegFormer,grayscale,5,3,68.73±0.20,77.97±0.38,94.30±0.10
+SegFormer,color-opponency,5,3,71.26±0.16,80.22±0.58,94.80±0.05
+SegFormer,single-color,5,3,71.59±0.67,80.56±0.59,94.79±0.09
+InternImage,-,0,3,61.87±0.21,69.87±1.49,94.01±0.34
+InternImage,grayscale green bias,0,1,60.90±0.30,69.00±0.71,93.93±0.17
+InternImage,grayscale,0,1,63.87±4.03,71.94±4.24,93.89±0.20
+InternImage,grayscale green bias,0,3,62.51±2.38,71.15±1.94,93.89±0.31
+InternImage,grayscale,0,3,62.84±0.41,71.32±0.66,94.00±0.13
+InternImage,grayscale,5,3,59.50±0.94,67.65±1.91,93.70±0.044
+InternImage,color-opponency,5,3,61.93±0.88,70.28±0.72,94.35±0.12
+InternImage,single-color,5,3,63.17±1.77,71.45±2.05,94.45±0.07

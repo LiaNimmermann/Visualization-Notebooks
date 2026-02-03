@@ -1,0 +1,55 @@
+\begin{tabular}{@{}lccc ccc@{}}
+    \toprule
+    Architecture & Preprocessing & Sparsity & mIoU & mAcc & aAcc \\
+    \midrule
+    Deeplabv3+ & - & - & 66.68 ~$\pm$~ 0.44 & 76.58 ~$\pm$~ 0.60 & 94.68 ~$\pm$~ 0.05 \\
+    \midrule
+    \midrule
+    \multirow{3}{*}{Deeplabv3+}& grayscale & \multirow{3}{*}{-}  & 66.53 ~$\pm$~ 1.11 & 77.86 ~$\pm$~ 0.63 & 94.35 ~$\pm$~ 0.35 \\
+     & color-opponency &  & 66.64 ~$\pm$~ 1.39 & 75.80 ~$\pm$~ 1.46 & 94.88 ~$\pm$~ 0.15 \\
+     &single-color&   & 66.08 ~$\pm$~ 3.05 & 76.33 ~$\pm$~ 3.03 & 94.90 ~$\pm$~ 0.16 \\
+    \midrule
+    \midrule
+    \multirow{3}{*}{Deeplabv3+} & grayscale & \multirow{3}{*}{percent\_90\%}& 51.13 ~$\pm$~ 0.16 & 62.14 ~$\pm$~ 0.45 & 89.06 ~$\pm$~ 0.18 \\
+    & color-opponency && 60.89 ~$\pm$~ 0.65 & 71.16 ~$\pm$~ 0.95 & 93.17 ~$\pm$~ 0.34 \\
+    & single-color & & 53.42 ~$\pm$~ 1.92 & 63.05 ~$\pm$~ 2.67 & 90.99 ~$\pm$~ 0.55 \\
+    \midrule
+    \multirow{3}{*}{Deeplabv3+} & grayscale & \multirow{3}{*}{percent\_80\%}& 57.32 ~$\pm$~ 3.25 & 67.75 ~$\pm$~ 3.26 & 91.76 ~$\pm$~ 0.74 \\
+    & color-opponency && 64.98 ~$\pm$~ 0.26 & 75.37 ~$\pm$~ 0.66 & 94.20 ~$\pm$~ 0.12 \\
+    & single-color && 59.84 ~$\pm$~ 2.63 & 70.17 ~$\pm$~ 2.71 & 93.49 ~$\pm$~ 0.23 \\
+    \midrule
+    \multirow{3}{*}{Deeplabv3+} & grayscale & \multirow{3}{*}{percent\_70\%} & 61.52 ~$\pm$~ 0.76 & 71.76 ~$\pm$~ 0.58 & 93.25 ~$\pm$~ 0.33 \\
+     & color-opponency &  & 65.90 ~$\pm$~ 0.65 & 76.43 ~$\pm$~ 0.56 & 94.53 ~$\pm$~ 0.14 \\
+     & single-color &  & 63.09 ~$\pm$~ 1.49 & 73.29 ~$\pm$~ 1.46 & 94.06 ~$\pm$~ 0.40 \\
+    \midrule
+    \multirow{3}{*}{Deeplabv3+} & grayscale & \multirow{3}{*}{percent\_60\%} & 63.14 ~$\pm$~ 2.14 & 73.47 ~$\pm$~ 1.80 & 94.02 ~$\pm$~ 0.15 \\
+    & color-opponency &  & 64.88 ~$\pm$~ 0.80 & 75.02 ~$\pm$~ 0.89 & 94.75 ~$\pm$~ 0.22 \\
+    & single-color &  & 64.90 ~$\pm$~ 2.08 & 74.79 ~$\pm$~ 2.79 & 94.68 ~$\pm$~ 0.14 \\
+    \midrule
+    \multirow{3}{*}{Deeplabv3+} & grayscale & \multirow{3}{*}{percent\_50\%} & 64.75 ~$\pm$~ 1.69 & 75.20 ~$\pm$~ 1.78 & 94.27 ~$\pm$~ 0.18 \\
+    & color-opponency &  & 67.71 ~$\pm$~ 0.65 & 77.90 ~$\pm$~ 0.86 & 94.85 ~$\pm$~ 0.17 \\
+    & single-color &  & 63.40 ~$\pm$~ 2.81 & 73.92 ~$\pm$~ 2.89 & 94.69 ~$\pm$~ 0.20 \\
+    \midrule
+    \multirow{3}{*}{Deeplabv3+} & grayscale & \multirow{3}{*}{percent\_40\%} & 64.89 ~$\pm$~ 1.13 & 75.69 ~$\pm$~ 0.88 & 94.49 ~$\pm$~ 0.15 \\
+    & color-opponency &  & 66.91 ~$\pm$~ 1.18 & 76.74 ~$\pm$~ 1.78 & 94.83 ~$\pm$~ 0.04 \\
+    & single-color &  & 66.42 ~$\pm$~ 2.40 & 76.23 ~$\pm$~ 2.42 & 94.95 ~$\pm$~ 0.14 \\
+    \midrule
+    \midrule
+    \multirow{3}{*}{Deeplabv3+} & grayscale & \multirow{3}{*}{threshold\_0.02} & 63.68 ~$\pm$~ 0.92 & 74.67 ~$\pm$~ 0.76 & 93.60 ~$\pm$~ 0.26 \\
+    & color-opponency &  & 64.37 ~$\pm$~ 0.84 & 74.71 ~$\pm$~ 1.34 & 94.26 ~$\pm$~ 0.15 \\
+    & single-color &  & 64.20 ~$\pm$~ 0.79 & 73.87 ~$\pm$~ 1.52 & 94.69 ~$\pm$~ 0.10 \\
+    \midrule
+    \multirow{3}{*}{Deeplabv3+} & grayscale & \multirow{3}{*}{threshold\_0.01} & 63.11 ~$\pm$~ 1.25 & 73.82 ~$\pm$~ 1.68 & 94.28 ~$\pm$~ 0.15 \\
+    & color-opponency &  & 63.69 ~$\pm$~ 2.18 & 73.98 ~$\pm$~ 2.97 & 94.28 ~$\pm$~ 0.14 \\
+    & single-color &  & 67.51 ~$\pm$~ 0.69 & 78.08 ~$\pm$~ 0.41 & 95.00 ~$\pm$~ 0.07 \\
+    \midrule
+    \multirow{3}{*}{Deeplabv3+} & grayscale & \multirow{3}{*}{threshold\_0.0075} & 65.29 ~$\pm$~ 2.12 & 76.77 ~$\pm$~ 3.02 & 94.31 ~$\pm$~ 0.39 \\
+    & color-opponency &  & 65.04 ~$\pm$~ 1.07 & 75.32 ~$\pm$~ 1.09 & 94.70 ~$\pm$~ 0.20 \\
+    & single-color &  & 67.93 ~$\pm$~ 1.35 & 78.33 ~$\pm$~ 1.31 & 95.00 ~$\pm$~ 0.15 \\
+    \midrule
+    \multirow{3}{*}{Deeplabv3+} & grayscale & \multirow{3}{*}{threshold\_0.005} & 66.27 ~$\pm$~ 0.87 & 76.50 ~$\pm$~ 1.26 & 94.52 ~$\pm$~ 0.21 \\
+     & color-opponency &  & 67.37 ~$\pm$~ 1.11 & 77.08 ~$\pm$~ 0.93 & 94.87 ~$\pm$~ 0.15 \\
+     & single-color &  & 68.15 ~$\pm$~ 2.07 & 78.26 ~$\pm$~ 1.61 & 94.99 ~$\pm$~ 0.26 \\
+   
+    \bottomrule
+  \end{tabular}
