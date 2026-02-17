@@ -1,0 +1,51 @@
+\begin{table}[h]
+  \centering
+  \caption{\textbf{Zero-shot} evaluation of the mask2former architecture trained on Cityscapes without sparsity and \textbf{validated on dark_zurich} at different sparsities. Metrics reported are mean Intersection over Union (mIoU), mean Accuracy (mAcc), and average Accuracy (aAcc).}
+  \begin{tabular}{@{}lccc ccc@{}}
+    \toprule
+    Architecture & Preprocessing & Sparsity & mIoU & mAcc & aAcc \\
+    \midrule
+    \multirow{3}{*}{mask2former} & grayscale & \multirow{3}{*}{-} & 26.16 ~$\pm$~ 0.10 & 40.57 ~$\pm$~ 2.23 & 59.16 ~$\pm$~ 0.60 \\
+    & color-opponency &  & 22.86 ~$\pm$~ 1.83 & 37.40 ~$\pm$~ 2.59 & 55.27 ~$\pm$~ 2.43 \\
+    & single-color &  & 24.94 ~$\pm$~ 1.10 & 39.66 ~$\pm$~ 2.37 & 57.10 ~$\pm$~ 3.53 \\
+    \midrule
+    \multirow{3}{*}{mask2former} & grayscale & \multirow{3}{*}{10\%} & 26.19 ~$\pm$~ 0.17 & 40.53 ~$\pm$~ 2.14 & 59.06 ~$\pm$~ 0.53 \\
+    & color-opponency &  & 22.87 ~$\pm$~ 1.81 & 37.40 ~$\pm$~ 2.60 & 55.26 ~$\pm$~ 2.44 \\
+    & single-color &  & 24.85 ~$\pm$~ 1.24 & 39.67 ~$\pm$~ 2.37 & 57.14 ~$\pm$~ 3.58 \\
+    \midrule
+    \multirow{3}{*}{mask2former} & grayscale & \multirow{3}{*}{20\%} & 26.05 ~$\pm$~ 0.14 & 40.74 ~$\pm$~ 1.77 & 59.09 ~$\pm$~ 0.26 \\
+    & color-opponency &  & 22.88 ~$\pm$~ 1.80 & 37.39 ~$\pm$~ 2.58 & 55.23 ~$\pm$~ 2.45 \\
+    & single-color &  & 25.05 ~$\pm$~ 1.21 & 39.88 ~$\pm$~ 2.61 & 57.52 ~$\pm$~ 3.48 \\
+    \midrule
+    \multirow{3}{*}{mask2former} & grayscale & \multirow{3}{*}{30\%} & 26.63 ~$\pm$~ 0.35 & 41.29 ~$\pm$~ 1.67 & 59.19 ~$\pm$~ 0.98 \\
+    & color-opponency &  & 22.88 ~$\pm$~ 1.72 & 37.29 ~$\pm$~ 2.53 & 55.20 ~$\pm$~ 2.47 \\
+    & single-color &  & 25.18 ~$\pm$~ 0.97 & 39.97 ~$\pm$~ 2.54 & 57.51 ~$\pm$~ 3.45 \\
+    \midrule
+    \multirow{3}{*}{mask2former} & grayscale & \multirow{3}{*}{40\%} & 26.85 ~$\pm$~ 0.13 & 42.01 ~$\pm$~ 0.83 & 59.33 ~$\pm$~ 1.37 \\
+    & color-opponency &  & 22.98 ~$\pm$~ 1.82 & 37.22 ~$\pm$~ 2.57 & 55.26 ~$\pm$~ 2.51 \\
+    & single-color &  & 25.10 ~$\pm$~ 1.01 & 39.91 ~$\pm$~ 2.45 & 57.91 ~$\pm$~ 3.48 \\
+    \midrule
+    \multirow{3}{*}{mask2former} & grayscale & \multirow{3}{*}{50\%} & 26.76 ~$\pm$~ 0.79 & 41.85 ~$\pm$~ 1.37 & 59.25 ~$\pm$~ 2.00 \\
+    & color-opponency &  & 22.97 ~$\pm$~ 1.88 & 37.37 ~$\pm$~ 2.51 & 55.32 ~$\pm$~ 2.63 \\
+    & single-color &  & 26.07 ~$\pm$~ 1.04 & 40.80 ~$\pm$~ 2.53 & 59.32 ~$\pm$~ 3.72 \\
+    \midrule
+    \multirow{3}{*}{mask2former} & grayscale & \multirow{3}{*}{60\%} & 27.18 ~$\pm$~ 1.09 & 42.29 ~$\pm$~ 1.06 & 60.40 ~$\pm$~ 4.53 \\
+    & color-opponency &  & 23.04 ~$\pm$~ 1.94 & 37.56 ~$\pm$~ 2.37 & 55.50 ~$\pm$~ 2.64 \\
+    & single-color &  & 25.60 ~$\pm$~ 1.50 & 40.68 ~$\pm$~ 3.58 & 60.02 ~$\pm$~ 3.87 \\
+    \midrule
+    \multirow{3}{*}{mask2former} & grayscale & \multirow{3}{*}{70\%} & 26.99 ~$\pm$~ 2.30 & 42.28 ~$\pm$~ 2.89 & 62.33 ~$\pm$~ 7.31 \\
+    & color-opponency &  & 23.33 ~$\pm$~ 1.51 & 38.38 ~$\pm$~ 2.00 & 56.18 ~$\pm$~ 1.80 \\
+    & single-color &  & 25.54 ~$\pm$~ 1.22 & 40.75 ~$\pm$~ 2.62 & 60.40 ~$\pm$~ 4.41 \\
+    \midrule
+    \multirow{3}{*}{mask2former} & grayscale & \multirow{3}{*}{80\%} & 24.92 ~$\pm$~ 0.70 & 40.67 ~$\pm$~ 2.24 & 60.82 ~$\pm$~ 4.94 \\
+    & color-opponency &  & 23.38 ~$\pm$~ 1.06 & 39.13 ~$\pm$~ 0.66 & 56.21 ~$\pm$~ 1.64 \\
+    & single-color &  & 24.73 ~$\pm$~ 1.05 & 39.21 ~$\pm$~ 2.25 & 59.46 ~$\pm$~ 2.54 \\
+    \midrule
+    \multirow{3}{*}{mask2former} & grayscale & \multirow{3}{*}{90\%} & 17.67 ~$\pm$~ 1.79 & 32.38 ~$\pm$~ 1.46 & 47.49 ~$\pm$~ 3.98 \\
+    & color-opponency &  & 22.87 ~$\pm$~ 1.29 & 38.10 ~$\pm$~ 1.18 & 54.80 ~$\pm$~ 1.30 \\
+    & single-color &  & 19.90 ~$\pm$~ 1.80 & 33.11 ~$\pm$~ 1.05 & 50.59 ~$\pm$~ 7.18 \\
+    \midrule
+    \bottomrule
+  \end{tabular}
+  \label{tab:sparse_results_mask2former_dark_zurich}
+\end{table}
