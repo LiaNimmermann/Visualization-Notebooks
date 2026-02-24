@@ -1,0 +1,33 @@
+\begin{table}[h]
+  \centering
+  \caption{Evaluation of the deeplabv3plus architecture trained on Cityscapes and \textbf{validated on acdc_rain} at different sparsities.}
+  \begin{tabular}{@{}lccc ccc@{}}
+    \toprule
+    Architecture & Preprocessing & Sparsity & mIoU & mAcc & aAcc \\
+    \midrule
+    \midrule
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{-} & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 \\
+    & color-opponency & & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 \\
+    & single-color & & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 \\
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{0.005\%} & 38.00 ~$\pm$~ 1.16 & 48.85 ~$\pm$~ 2.81 & 85.89 ~$\pm$~ 1.73 \\
+    & color-opponency & & 37.53 ~$\pm$~ 1.10 & 49.74 ~$\pm$~ 0.29 & 82.10 ~$\pm$~ 4.63 \\
+    & single-color & & 38.97 ~$\pm$~ 1.92 & 53.64 ~$\pm$~ 2.61 & 82.88 ~$\pm$~ 5.07 \\
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{0.0075\%} & 37.72 ~$\pm$~ 2.17 & 49.83 ~$\pm$~ 4.56 & 83.16 ~$\pm$~ 3.54 \\
+    & color-opponency & & 35.23 ~$\pm$~ 2.50 & 47.00 ~$\pm$~ 1.18 & 80.37 ~$\pm$~ 6.10 \\
+    & single-color & & 39.92 ~$\pm$~ 2.48 & 53.51 ~$\pm$~ 2.34 & 85.03 ~$\pm$~ 3.45 \\
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{0.01\%} & 37.99 ~$\pm$~ 1.54 & 50.94 ~$\pm$~ 4.15 & 86.40 ~$\pm$~ 1.24 \\
+    & color-opponency & & 35.79 ~$\pm$~ 0.67 & 46.29 ~$\pm$~ 0.59 & 84.20 ~$\pm$~ 1.40 \\
+    & single-color & & 39.69 ~$\pm$~ 1.76 & 54.51 ~$\pm$~ 0.87 & 79.75 ~$\pm$~ 3.18 \\
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{0.02\%} & 38.63 ~$\pm$~ 0.69 & 48.92 ~$\pm$~ 1.49 & 87.06 ~$\pm$~ 0.47 \\
+    & color-opponency & & 38.58 ~$\pm$~ 1.53 & 48.35 ~$\pm$~ 2.01 & 86.35 ~$\pm$~ 1.16 \\
+    & single-color & & 38.52 ~$\pm$~ 1.46 & 50.00 ~$\pm$~ 2.50 & 86.10 ~$\pm$~ 1.31 \\
+    \midrule
+    \bottomrule
+  \end{tabular}
+  \label{tab:sparse_deeplabv3plus_acdc_rain}
+\end{table}

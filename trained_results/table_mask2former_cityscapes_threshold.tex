@@ -1,0 +1,34 @@
+\begin{table}[h]
+  \centering
+  \caption{Evaluation of the mask2former architecture trained on Cityscapes and \textbf{validated on cityscapes} at different sparsities.}
+  \begin{tabular}{@{}lccc ccc@{}}
+    \toprule
+    Architecture & Preprocessing & Sparsity & mIoU & mAcc & aAcc \\
+    \midrule
+    mask2former & - & - & 77.43 ~$\pm$~ 0.35 & 86.83 ~$\pm$~ 0.19 & 96.10 ~$\pm$~ 0.05 \\
+    \midrule
+    \midrule
+    \multirow{3}{*}{mask2former} & grayscale & \multirow{3}{*}{-} & 73.93 ~$\pm$~ 0.80 & 85.33 ~$\pm$~ 0.92 & 95.59 ~$\pm$~ 0.13 \\
+    & color-opponency & & 73.47 ~$\pm$~ 0.47 & 84.86 ~$\pm$~ 0.57 & 95.54 ~$\pm$~ 0.11 \\
+    & single-color & & 74.02 ~$\pm$~ 0.62 & 84.64 ~$\pm$~ 0.85 & 95.75 ~$\pm$~ 0.02 \\
+    \midrule
+    \multirow{3}{*}{mask2former} & grayscale & \multirow{3}{*}{0.005\%} & 73.86 ~$\pm$~ 0.45 & 84.84 ~$\pm$~ 0.25 & 95.59 ~$\pm$~ 0.12 \\
+    & color-opponency & & 73.25 ~$\pm$~ 0.98 & 84.48 ~$\pm$~ 0.53 & 95.53 ~$\pm$~ 0.12 \\
+    & single-color & & 73.37 ~$\pm$~ 1.45 & 84.16 ~$\pm$~ 1.34 & 95.67 ~$\pm$~ 0.12 \\
+    \midrule
+    \multirow{3}{*}{mask2former} & grayscale & \multirow{3}{*}{0.0075\%} & 73.15 ~$\pm$~ 0.79 & 84.43 ~$\pm$~ 0.60 & 95.56 ~$\pm$~ 0.02 \\
+    & color-opponency & & 73.92 ~$\pm$~ 0.76 & 85.17 ~$\pm$~ 0.96 & 95.54 ~$\pm$~ 0.05 \\
+    & single-color & & 74.28 ~$\pm$~ 0.37 & 84.95 ~$\pm$~ 0.19 & 95.76 ~$\pm$~ 0.04 \\
+    \midrule
+    \multirow{3}{*}{mask2former} & grayscale & \multirow{3}{*}{0.01\%} & 72.79 ~$\pm$~ 1.16 & 84.29 ~$\pm$~ 0.74 & 95.42 ~$\pm$~ 0.06 \\
+    & color-opponency & & 73.67 ~$\pm$~ 0.93 & 84.82 ~$\pm$~ 0.69 & 95.51 ~$\pm$~ 0.09 \\
+    & single-color & & 74.17 ~$\pm$~ 1.53 & 85.16 ~$\pm$~ 1.71 & 95.75 ~$\pm$~ 0.05 \\
+    \midrule
+    \multirow{3}{*}{mask2former} & grayscale & \multirow{3}{*}{0.02\%} & 70.48 ~$\pm$~ 1.21 & 82.67 ~$\pm$~ 1.11 & 95.00 ~$\pm$~ 0.11 \\
+    & color-opponency & & 71.34 ~$\pm$~ 1.34 & 83.41 ~$\pm$~ 1.15 & 95.06 ~$\pm$~ 0.16 \\
+    & single-color & & 72.53 ~$\pm$~ 1.71 & 83.65 ~$\pm$~ 1.71 & 95.47 ~$\pm$~ 0.11 \\
+    \midrule
+    \bottomrule
+  \end{tabular}
+  \label{tab:sparse_mask2former_cityscapes}
+\end{table}

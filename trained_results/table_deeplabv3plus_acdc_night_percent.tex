@@ -1,0 +1,41 @@
+\begin{table}[h]
+  \centering
+  \caption{Evaluation of the deeplabv3plus architecture trained on Cityscapes and \textbf{validated on acdc_night} at different sparsities.}
+  \begin{tabular}{@{}lccc ccc@{}}
+    \toprule
+    Architecture & Preprocessing & Sparsity & mIoU & mAcc & aAcc \\
+    \midrule
+    \midrule
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{-} & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 \\
+    & color-opponency & & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 \\
+    & single-color & & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 \\
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{40\%} & 21.38 ~$\pm$~ 0.54 & 36.08 ~$\pm$~ 1.08 & 59.28 ~$\pm$~ 0.92 \\
+    & color-opponency & & 19.98 ~$\pm$~ 0.28 & 32.59 ~$\pm$~ 0.85 & 56.45 ~$\pm$~ 1.19 \\
+    & single-color & & 18.15 ~$\pm$~ 1.92 & 31.34 ~$\pm$~ 2.39 & 53.05 ~$\pm$~ 4.76 \\
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{50\%} & 21.64 ~$\pm$~ 1.10 & 34.38 ~$\pm$~ 1.46 & 59.34 ~$\pm$~ 2.44 \\
+    & color-opponency & & 20.04 ~$\pm$~ 0.98 & 32.63 ~$\pm$~ 1.86 & 57.94 ~$\pm$~ 0.92 \\
+    & single-color & & 18.96 ~$\pm$~ 0.72 & 31.29 ~$\pm$~ 1.11 & 54.72 ~$\pm$~ 3.40 \\
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{60\%} & 20.98 ~$\pm$~ 0.40 & 32.72 ~$\pm$~ 1.59 & 57.80 ~$\pm$~ 0.97 \\
+    & color-opponency & & 20.15 ~$\pm$~ 1.24 & 33.06 ~$\pm$~ 3.39 & 58.75 ~$\pm$~ 0.49 \\
+    & single-color & & 19.72 ~$\pm$~ 1.15 & 33.21 ~$\pm$~ 0.67 & 57.51 ~$\pm$~ 0.64 \\
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{70\%} & 19.40 ~$\pm$~ 1.33 & 31.40 ~$\pm$~ 2.27 & 56.10 ~$\pm$~ 2.09 \\
+    & color-opponency & & 19.22 ~$\pm$~ 1.01 & 32.11 ~$\pm$~ 1.34 & 56.58 ~$\pm$~ 0.73 \\
+    & single-color & & 19.64 ~$\pm$~ 1.52 & 31.18 ~$\pm$~ 1.17 & 54.54 ~$\pm$~ 3.43 \\
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{80\%} & 17.52 ~$\pm$~ 1.48 & 26.65 ~$\pm$~ 1.79 & 50.97 ~$\pm$~ 2.71 \\
+    & color-opponency & & 21.61 ~$\pm$~ 0.48 & 33.73 ~$\pm$~ 0.44 & 57.92 ~$\pm$~ 0.79 \\
+    & single-color & & 19.30 ~$\pm$~ 0.77 & 30.72 ~$\pm$~ 0.90 & 54.56 ~$\pm$~ 1.18 \\
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{90\%} & 16.35 ~$\pm$~ 1.89 & 26.35 ~$\pm$~ 1.95 & 47.75 ~$\pm$~ 2.43 \\
+    & color-opponency & & 20.81 ~$\pm$~ 0.32 & 32.21 ~$\pm$~ 0.61 & 55.78 ~$\pm$~ 1.76 \\
+    & single-color & & 15.82 ~$\pm$~ 0.84 & 25.46 ~$\pm$~ 1.24 & 49.29 ~$\pm$~ 1.00 \\
+    \midrule
+    \bottomrule
+  \end{tabular}
+  \label{tab:sparse_deeplabv3plus_acdc_night}
+\end{table}

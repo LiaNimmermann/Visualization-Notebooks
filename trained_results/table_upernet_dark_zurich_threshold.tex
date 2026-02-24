@@ -1,0 +1,18 @@
+\begin{table}[h]
+  \centering
+  \caption{Evaluation of the upernet architecture trained on Cityscapes and \textbf{validated on dark_zurich} at different sparsities.}
+  \begin{tabular}{@{}lccc ccc@{}}
+    \toprule
+    Architecture & Preprocessing & Sparsity & mIoU & mAcc & aAcc \\
+    \midrule
+    upernet & - & - & 11.42 ~$\pm$~ 0.58 & 21.92 ~$\pm$~ 2.60 & 42.86 ~$\pm$~ 6.74 \\
+    \midrule
+    \midrule
+    \multirow{3}{*}{upernet} & grayscale & \multirow{3}{*}{-} & 18.03 ~$\pm$~ 1.82 & 32.15 ~$\pm$~ 1.79 & 50.00 ~$\pm$~ 1.10 \\
+    & color-opponency & & 16.10 ~$\pm$~ 0.95 & 29.13 ~$\pm$~ 1.21 & 46.56 ~$\pm$~ 4.08 \\
+    & single-color & & 13.82 ~$\pm$~ 1.52 & 27.68 ~$\pm$~ 1.50 & 44.06 ~$\pm$~ 3.62 \\
+    \midrule
+    \bottomrule
+  \end{tabular}
+  \label{tab:sparse_upernet_dark_zurich}
+\end{table}

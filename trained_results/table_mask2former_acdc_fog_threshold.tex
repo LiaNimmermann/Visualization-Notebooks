@@ -1,0 +1,34 @@
+\begin{table}[h]
+  \centering
+  \caption{Evaluation of the mask2former architecture trained on Cityscapes and \textbf{validated on acdc_fog} at different sparsities.}
+  \begin{tabular}{@{}lccc ccc@{}}
+    \toprule
+    Architecture & Preprocessing & Sparsity & mIoU & mAcc & aAcc \\
+    \midrule
+    mask2former & - & - & 64.70 ~$\pm$~ 3.04 & 79.77 ~$\pm$~ 3.06 & 91.08 ~$\pm$~ 1.46 \\
+    \midrule
+    \midrule
+    \multirow{3}{*}{mask2former} & grayscale & \multirow{3}{*}{-} & 62.16 ~$\pm$~ 1.18 & 75.22 ~$\pm$~ 0.88 & 91.30 ~$\pm$~ 1.05 \\
+    & color-opponency & & 61.58 ~$\pm$~ 0.95 & 77.08 ~$\pm$~ 1.58 & 89.45 ~$\pm$~ 1.28 \\
+    & single-color & & 63.77 ~$\pm$~ 3.25 & 77.78 ~$\pm$~ 2.56 & 90.43 ~$\pm$~ 1.33 \\
+    \midrule
+    \multirow{3}{*}{mask2former} & grayscale & \multirow{3}{*}{0.005\%} & 63.31 ~$\pm$~ 2.75 & 76.30 ~$\pm$~ 3.42 & 92.21 ~$\pm$~ 0.50 \\
+    & color-opponency & & 64.27 ~$\pm$~ 0.40 & 78.17 ~$\pm$~ 0.43 & 90.86 ~$\pm$~ 1.43 \\
+    & single-color & & 62.21 ~$\pm$~ 1.92 & 78.07 ~$\pm$~ 1.52 & 90.80 ~$\pm$~ 1.12 \\
+    \midrule
+    \multirow{3}{*}{mask2former} & grayscale & \multirow{3}{*}{0.0075\%} & 65.32 ~$\pm$~ 3.37 & 78.15 ~$\pm$~ 3.16 & 92.08 ~$\pm$~ 0.22 \\
+    & color-opponency & & 64.42 ~$\pm$~ 1.15 & 76.75 ~$\pm$~ 0.59 & 91.90 ~$\pm$~ 0.88 \\
+    & single-color & & 64.62 ~$\pm$~ 1.12 & 78.39 ~$\pm$~ 0.33 & 90.07 ~$\pm$~ 0.88 \\
+    \midrule
+    \multirow{3}{*}{mask2former} & grayscale & \multirow{3}{*}{0.01\%} & 63.72 ~$\pm$~ 4.78 & 75.37 ~$\pm$~ 3.69 & 91.60 ~$\pm$~ 1.17 \\
+    & color-opponency & & 64.02 ~$\pm$~ 0.71 & 76.25 ~$\pm$~ 1.10 & 91.65 ~$\pm$~ 0.91 \\
+    & single-color & & 61.83 ~$\pm$~ 3.69 & 76.87 ~$\pm$~ 3.10 & 90.96 ~$\pm$~ 1.93 \\
+    \midrule
+    \multirow{3}{*}{mask2former} & grayscale & \multirow{3}{*}{0.02\%} & 60.92 ~$\pm$~ 1.92 & 73.32 ~$\pm$~ 2.72 & 90.68 ~$\pm$~ 0.67 \\
+    & color-opponency & & 57.47 ~$\pm$~ 3.76 & 70.63 ~$\pm$~ 3.23 & 89.55 ~$\pm$~ 0.54 \\
+    & single-color & & 59.42 ~$\pm$~ 6.66 & 74.27 ~$\pm$~ 6.31 & 88.32 ~$\pm$~ 3.72 \\
+    \midrule
+    \bottomrule
+  \end{tabular}
+  \label{tab:sparse_mask2former_acdc_fog}
+\end{table}
