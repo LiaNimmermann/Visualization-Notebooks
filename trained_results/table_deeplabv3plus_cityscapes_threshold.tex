@@ -1,0 +1,33 @@
+\begin{table}[h]
+  \centering
+  \caption{Evaluation of the deeplabv3plus architecture trained on Cityscapes and \textbf{validated on cityscapes} at different sparsities.}
+  \begin{tabular}{@{}lccc ccc@{}}
+    \toprule
+    Architecture & Preprocessing & Sparsity & mIoU & mAcc & aAcc \\
+    \midrule
+    \midrule
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{-} & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 \\
+    & color-opponency & & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 \\
+    & single-color & & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 \\
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{0.005\%} & 66.27 ~$\pm$~ 1.06 & 76.50 ~$\pm$~ 1.54 & 94.52 ~$\pm$~ 0.26 \\
+    & color-opponency & & 67.37 ~$\pm$~ 1.35 & 77.08 ~$\pm$~ 1.14 & 94.87 ~$\pm$~ 0.18 \\
+    & single-color & & 68.15 ~$\pm$~ 2.54 & 78.26 ~$\pm$~ 1.97 & 94.99 ~$\pm$~ 0.32 \\
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{0.0075\%} & 65.29 ~$\pm$~ 2.59 & 76.77 ~$\pm$~ 3.70 & 94.31 ~$\pm$~ 0.48 \\
+    & color-opponency & & 65.04 ~$\pm$~ 1.31 & 75.32 ~$\pm$~ 1.34 & 94.70 ~$\pm$~ 0.24 \\
+    & single-color & & 67.93 ~$\pm$~ 1.65 & 78.33 ~$\pm$~ 1.60 & 95.00 ~$\pm$~ 0.18 \\
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{0.01\%} & 63.11 ~$\pm$~ 1.53 & 73.82 ~$\pm$~ 2.06 & 94.28 ~$\pm$~ 0.19 \\
+    & color-opponency & & 63.69 ~$\pm$~ 2.66 & 73.98 ~$\pm$~ 3.63 & 94.28 ~$\pm$~ 0.17 \\
+    & single-color & & 67.51 ~$\pm$~ 0.85 & 78.08 ~$\pm$~ 0.50 & 95.00 ~$\pm$~ 0.09 \\
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{0.02\%} & 63.68 ~$\pm$~ 1.13 & 74.67 ~$\pm$~ 0.93 & 93.60 ~$\pm$~ 0.32 \\
+    & color-opponency & & 64.37 ~$\pm$~ 1.03 & 74.71 ~$\pm$~ 1.64 & 94.26 ~$\pm$~ 0.18 \\
+    & single-color & & 64.20 ~$\pm$~ 0.96 & 73.87 ~$\pm$~ 1.86 & 94.69 ~$\pm$~ 0.12 \\
+    \midrule
+    \bottomrule
+  \end{tabular}
+  \label{tab:sparse_deeplabv3plus_cityscapes}
+\end{table}

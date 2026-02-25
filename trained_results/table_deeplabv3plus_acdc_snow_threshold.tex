@@ -1,0 +1,33 @@
+\begin{table}[h]
+  \centering
+  \caption{Evaluation of the deeplabv3plus architecture trained on Cityscapes and \textbf{validated on acdc_snow} at different sparsities.}
+  \begin{tabular}{@{}lccc ccc@{}}
+    \toprule
+    Architecture & Preprocessing & Sparsity & mIoU & mAcc & aAcc \\
+    \midrule
+    \midrule
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{-} & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 \\
+    & color-opponency & & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 \\
+    & single-color & & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 \\
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{0.005\%} & 34.30 ~$\pm$~ 0.82 & 45.97 ~$\pm$~ 1.85 & 77.55 ~$\pm$~ 4.78 \\
+    & color-opponency & & 31.74 ~$\pm$~ 1.43 & 44.15 ~$\pm$~ 0.54 & 72.84 ~$\pm$~ 7.60 \\
+    & single-color & & 32.22 ~$\pm$~ 3.20 & 46.32 ~$\pm$~ 2.50 & 74.30 ~$\pm$~ 8.40 \\
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{0.0075\%} & 34.54 ~$\pm$~ 3.28 & 47.48 ~$\pm$~ 3.81 & 76.77 ~$\pm$~ 6.98 \\
+    & color-opponency & & 31.40 ~$\pm$~ 2.96 & 43.69 ~$\pm$~ 1.64 & 73.56 ~$\pm$~ 7.48 \\
+    & single-color & & 33.57 ~$\pm$~ 2.42 & 46.43 ~$\pm$~ 3.89 & 77.83 ~$\pm$~ 3.10 \\
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{0.01\%} & 34.86 ~$\pm$~ 0.79 & 47.06 ~$\pm$~ 1.73 & 81.31 ~$\pm$~ 2.72 \\
+    & color-opponency & & 31.14 ~$\pm$~ 1.71 & 42.93 ~$\pm$~ 0.80 & 76.98 ~$\pm$~ 3.86 \\
+    & single-color & & 31.76 ~$\pm$~ 4.00 & 44.64 ~$\pm$~ 1.40 & 70.62 ~$\pm$~ 3.49 \\
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{0.02\%} & 34.85 ~$\pm$~ 0.98 & 45.97 ~$\pm$~ 0.50 & 81.71 ~$\pm$~ 1.10 \\
+    & color-opponency & & 34.54 ~$\pm$~ 1.51 & 45.06 ~$\pm$~ 2.17 & 79.02 ~$\pm$~ 1.45 \\
+    & single-color & & 33.04 ~$\pm$~ 2.08 & 44.92 ~$\pm$~ 2.47 & 78.93 ~$\pm$~ 2.40 \\
+    \midrule
+    \bottomrule
+  \end{tabular}
+  \label{tab:sparse_deeplabv3plus_acdc_snow}
+\end{table}

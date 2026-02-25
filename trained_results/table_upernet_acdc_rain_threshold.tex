@@ -1,0 +1,18 @@
+\begin{table}[h]
+  \centering
+  \caption{Evaluation of the upernet architecture trained on Cityscapes and \textbf{validated on acdc_rain} at different sparsities.}
+  \begin{tabular}{@{}lccc ccc@{}}
+    \toprule
+    Architecture & Preprocessing & Sparsity & mIoU & mAcc & aAcc \\
+    \midrule
+    upernet & - & - & 35.35 ~$\pm$~ 2.12 & 48.51 ~$\pm$~ 2.46 & 81.44 ~$\pm$~ 4.98 \\
+    \midrule
+    \midrule
+    \multirow{3}{*}{upernet} & grayscale & \multirow{3}{*}{-} & 29.31 ~$\pm$~ 0.53 & 40.70 ~$\pm$~ 2.36 & 69.42 ~$\pm$~ 5.65 \\
+    & color-opponency & & 34.28 ~$\pm$~ 1.23 & 45.48 ~$\pm$~ 1.77 & 76.43 ~$\pm$~ 5.73 \\
+    & single-color & & 33.33 ~$\pm$~ 0.70 & 44.17 ~$\pm$~ 0.54 & 73.36 ~$\pm$~ 5.19 \\
+    \midrule
+    \bottomrule
+  \end{tabular}
+  \label{tab:sparse_upernet_acdc_rain}
+\end{table}

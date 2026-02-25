@@ -1,0 +1,33 @@
+\begin{table}[h]
+  \centering
+  \caption{Evaluation of the deeplabv3plus architecture trained on Cityscapes and \textbf{validated on acdc_fog} at different sparsities.}
+  \begin{tabular}{@{}lccc ccc@{}}
+    \toprule
+    Architecture & Preprocessing & Sparsity & mIoU & mAcc & aAcc \\
+    \midrule
+    \midrule
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{-} & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 \\
+    & color-opponency & & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 \\
+    & single-color & & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 \\
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{0.005\%} & 51.65 ~$\pm$~ 0.95 & 62.43 ~$\pm$~ 2.83 & 87.73 ~$\pm$~ 2.05 \\
+    & color-opponency & & 48.79 ~$\pm$~ 1.32 & 60.34 ~$\pm$~ 0.34 & 83.25 ~$\pm$~ 5.84 \\
+    & single-color & & 50.87 ~$\pm$~ 3.32 & 63.80 ~$\pm$~ 3.54 & 84.19 ~$\pm$~ 6.37 \\
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{0.0075\%} & 51.63 ~$\pm$~ 3.78 & 62.90 ~$\pm$~ 4.51 & 85.76 ~$\pm$~ 3.59 \\
+    & color-opponency & & 45.73 ~$\pm$~ 2.79 & 57.39 ~$\pm$~ 1.07 & 81.38 ~$\pm$~ 7.73 \\
+    & single-color & & 51.10 ~$\pm$~ 2.35 & 64.43 ~$\pm$~ 2.91 & 84.97 ~$\pm$~ 3.30 \\
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{0.01\%} & 50.59 ~$\pm$~ 1.11 & 61.00 ~$\pm$~ 1.13 & 88.94 ~$\pm$~ 2.13 \\
+    & color-opponency & & 44.68 ~$\pm$~ 1.69 & 55.83 ~$\pm$~ 1.06 & 85.04 ~$\pm$~ 2.66 \\
+    & single-color & & 47.67 ~$\pm$~ 3.06 & 60.09 ~$\pm$~ 0.42 & 76.90 ~$\pm$~ 3.08 \\
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{0.02\%} & 50.73 ~$\pm$~ 1.55 & 60.07 ~$\pm$~ 2.48 & 89.72 ~$\pm$~ 0.42 \\
+    & color-opponency & & 46.02 ~$\pm$~ 2.37 & 55.61 ~$\pm$~ 2.90 & 86.76 ~$\pm$~ 1.83 \\
+    & single-color & & 46.46 ~$\pm$~ 2.73 & 57.29 ~$\pm$~ 2.89 & 86.42 ~$\pm$~ 2.34 \\
+    \midrule
+    \bottomrule
+  \end{tabular}
+  \label{tab:sparse_deeplabv3plus_acdc_fog}
+\end{table}

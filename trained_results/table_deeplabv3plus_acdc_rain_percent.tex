@@ -1,0 +1,41 @@
+\begin{table}[h]
+  \centering
+  \caption{Evaluation of the deeplabv3plus architecture trained on Cityscapes and \textbf{validated on acdc_rain} at different sparsities.}
+  \begin{tabular}{@{}lccc ccc@{}}
+    \toprule
+    Architecture & Preprocessing & Sparsity & mIoU & mAcc & aAcc \\
+    \midrule
+    \midrule
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{-} & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 \\
+    & color-opponency & & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 \\
+    & single-color & & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 \\
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{40\%} & 36.25 ~$\pm$~ 0.65 & 49.47 ~$\pm$~ 0.94 & 84.51 ~$\pm$~ 1.37 \\
+    & color-opponency & & 36.42 ~$\pm$~ 1.80 & 49.09 ~$\pm$~ 1.45 & 80.44 ~$\pm$~ 3.71 \\
+    & single-color & & 38.71 ~$\pm$~ 1.35 & 51.81 ~$\pm$~ 1.73 & 84.47 ~$\pm$~ 1.45 \\
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{50\%} & 38.50 ~$\pm$~ 1.96 & 50.51 ~$\pm$~ 1.16 & 85.52 ~$\pm$~ 2.42 \\
+    & color-opponency & & 37.90 ~$\pm$~ 1.75 & 50.42 ~$\pm$~ 1.79 & 84.23 ~$\pm$~ 1.64 \\
+    & single-color & & 39.63 ~$\pm$~ 1.62 & 52.81 ~$\pm$~ 2.60 & 86.99 ~$\pm$~ 1.35 \\
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{60\%} & 36.37 ~$\pm$~ 0.91 & 47.49 ~$\pm$~ 1.11 & 83.76 ~$\pm$~ 2.75 \\
+    & color-opponency & & 38.64 ~$\pm$~ 3.13 & 51.87 ~$\pm$~ 5.13 & 84.06 ~$\pm$~ 3.80 \\
+    & single-color & & 38.46 ~$\pm$~ 3.77 & 50.28 ~$\pm$~ 3.44 & 84.83 ~$\pm$~ 3.75 \\
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{70\%} & 34.96 ~$\pm$~ 1.33 & 43.91 ~$\pm$~ 2.27 & 84.64 ~$\pm$~ 1.30 \\
+    & color-opponency & & 36.90 ~$\pm$~ 0.86 & 48.63 ~$\pm$~ 2.20 & 82.04 ~$\pm$~ 3.93 \\
+    & single-color & & 36.12 ~$\pm$~ 0.51 & 45.95 ~$\pm$~ 1.69 & 83.64 ~$\pm$~ 1.88 \\
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{80\%} & 33.60 ~$\pm$~ 5.53 & 43.00 ~$\pm$~ 4.99 & 79.51 ~$\pm$~ 8.46 \\
+    & color-opponency & & 37.05 ~$\pm$~ 1.20 & 47.28 ~$\pm$~ 2.09 & 84.30 ~$\pm$~ 2.37 \\
+    & single-color & & 35.33 ~$\pm$~ 1.38 & 43.74 ~$\pm$~ 0.93 & 85.11 ~$\pm$~ 1.58 \\
+    \midrule
+    \multirow{3}{*}{deeplabv3plus} & grayscale & \multirow{3}{*}{90\%} & 31.10 ~$\pm$~ 0.98 & 39.23 ~$\pm$~ 0.74 & 79.62 ~$\pm$~ 3.03 \\
+    & color-opponency & & 36.12 ~$\pm$~ 0.91 & 46.09 ~$\pm$~ 0.54 & 83.82 ~$\pm$~ 2.74 \\
+    & single-color & & 27.80 ~$\pm$~ 2.85 & 34.98 ~$\pm$~ 2.29 & 77.08 ~$\pm$~ 6.87 \\
+    \midrule
+    \bottomrule
+  \end{tabular}
+  \label{tab:sparse_deeplabv3plus_acdc_rain}
+\end{table}

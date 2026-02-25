@@ -4,8 +4,8 @@ import os
 # === Einstellungen ===
 data_path = '/home/lstracke/Visualization-Notebooks/Data-Visualization/zero_shot/val_comparison_preprocessing_trained_zero_shot.csv'
 zero_shot_bool = True
-architecture = 'upernet'
-dataset = 'acdc_night'
+architecture = 'deeplabv3+'
+dataset = 'acdc_snow'
 preprocessing = ['grayscale', 'color-opponency', 'single-color']
 
 # Optional: Zero-shot Präprocessing anpassen

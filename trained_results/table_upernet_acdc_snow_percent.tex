@@ -1,0 +1,42 @@
+\begin{table}[h]
+  \centering
+  \caption{Evaluation of the upernet architecture trained on Cityscapes and \textbf{validated on acdc_snow} at different sparsities.}
+  \begin{tabular}{@{}lccc ccc@{}}
+    \toprule
+    Architecture & Preprocessing & Sparsity & mIoU & mAcc & aAcc \\
+    \midrule
+    upernet & - & - & 26.84 ~$\pm$~ 4.13 & 38.65 ~$\pm$~ 7.85 & 66.69 ~$\pm$~ 11.22 \\
+    \midrule
+    \midrule
+    \multirow{3}{*}{upernet} & grayscale & \multirow{3}{*}{-} & 26.63 ~$\pm$~ 0.26 & 38.34 ~$\pm$~ 1.56 & 62.29 ~$\pm$~ 2.11 \\
+    & color-opponency & & 26.57 ~$\pm$~ 1.75 & 37.94 ~$\pm$~ 1.75 & 68.68 ~$\pm$~ 1.71 \\
+    & single-color & & 27.84 ~$\pm$~ 2.10 & 37.96 ~$\pm$~ 2.27 & 67.74 ~$\pm$~ 7.07 \\
+    \midrule
+    \multirow{3}{*}{upernet} & grayscale & \multirow{3}{*}{40\%} & 27.93 ~$\pm$~ 1.38 & 37.46 ~$\pm$~ 2.77 & 72.73 ~$\pm$~ 2.13 \\
+    & color-opponency & & 28.34 ~$\pm$~ 2.95 & 39.13 ~$\pm$~ 3.36 & 71.96 ~$\pm$~ 4.61 \\
+    & single-color & & 27.17 ~$\pm$~ 1.20 & 37.11 ~$\pm$~ 1.49 & 70.81 ~$\pm$~ 2.70 \\
+    \midrule
+    \multirow{3}{*}{upernet} & grayscale & \multirow{3}{*}{50\%} & 26.69 ~$\pm$~ 1.79 & 35.25 ~$\pm$~ 1.78 & 65.63 ~$\pm$~ 5.43 \\
+    & color-opponency & & 28.85 ~$\pm$~ 2.98 & 40.47 ~$\pm$~ 1.83 & 66.80 ~$\pm$~ 4.11 \\
+    & single-color & & 28.08 ~$\pm$~ 0.63 & 39.01 ~$\pm$~ 1.38 & 71.33 ~$\pm$~ 3.56 \\
+    \midrule
+    \multirow{3}{*}{upernet} & grayscale & \multirow{3}{*}{60\%} & 26.44 ~$\pm$~ 0.47 & 35.82 ~$\pm$~ 0.94 & 67.14 ~$\pm$~ 3.91 \\
+    & color-opponency & & 28.23 ~$\pm$~ 1.54 & 39.55 ~$\pm$~ 1.55 & 70.19 ~$\pm$~ 6.39 \\
+    & single-color & & 28.64 ~$\pm$~ 0.32 & 38.33 ~$\pm$~ 0.35 & 72.86 ~$\pm$~ 1.10 \\
+    \midrule
+    \multirow{3}{*}{upernet} & grayscale & \multirow{3}{*}{70\%} & 21.90 ~$\pm$~ 2.24 & 29.42 ~$\pm$~ 3.98 & 61.26 ~$\pm$~ 4.73 \\
+    & color-opponency & & 27.99 ~$\pm$~ 2.83 & 38.42 ~$\pm$~ 2.35 & 68.47 ~$\pm$~ 6.07 \\
+    & single-color & & 27.21 ~$\pm$~ 1.24 & 35.07 ~$\pm$~ 1.23 & 72.49 ~$\pm$~ 6.13 \\
+    \midrule
+    \multirow{3}{*}{upernet} & grayscale & \multirow{3}{*}{80\%} & 24.09 ~$\pm$~ 3.29 & 30.40 ~$\pm$~ 4.13 & 70.88 ~$\pm$~ 4.09 \\
+    & color-opponency & & 27.48 ~$\pm$~ 2.43 & 37.76 ~$\pm$~ 1.77 & 71.02 ~$\pm$~ 6.47 \\
+    & single-color & & 23.63 ~$\pm$~ 0.54 & 30.23 ~$\pm$~ 0.77 & 69.08 ~$\pm$~ 3.31 \\
+    \midrule
+    \multirow{3}{*}{upernet} & grayscale & \multirow{3}{*}{90\%} & 23.93 ~$\pm$~ 1.08 & 30.71 ~$\pm$~ 1.52 & 69.38 ~$\pm$~ 0.99 \\
+    & color-opponency & & 26.63 ~$\pm$~ 2.06 & 35.94 ~$\pm$~ 2.88 & 70.43 ~$\pm$~ 1.62 \\
+    & single-color & & 18.21 ~$\pm$~ 2.27 & 24.19 ~$\pm$~ 2.60 & 63.61 ~$\pm$~ 4.87 \\
+    \midrule
+    \bottomrule
+  \end{tabular}
+  \label{tab:sparse_upernet_acdc_snow}
+\end{table}
