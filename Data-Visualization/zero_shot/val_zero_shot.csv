@@ -41,7 +41,7 @@ deeplabv3plus,dark_zurich,baseline,60,2.29,0.25,6.43,0.71,12.57,2.75
 deeplabv3plus,dark_zurich,baseline,70,1.64,0.31,5.27,0.39,9.64,4.5
 deeplabv3plus,dark_zurich,baseline,80,1.24,0.29,4.15,1.15,8.4,4.82
 deeplabv3plus,dark_zurich,baseline,90,1.4,0.43,4.02,1.59,11.81,7.06
-mask2former,acdc_night,baseline,0,19.65,1.22,32.33,1.79,51.57,2.57
+mask2former,acdc_night,baseline,0,19.65,1.22,32.32,1.80,51.57,2.56
 mask2former,acdc_night,baseline,10,14.35,1.63,26.18,1.94,43.53,3.29
 mask2former,acdc_night,baseline,20,8.44,1.16,16.93,1.5,30.71,1.95
 mask2former,acdc_night,baseline,30,5.43,1.25,10.8,1.95,20.98,2.22
@@ -51,7 +51,7 @@ mask2former,acdc_night,baseline,60,4.18,0.95,9.43,1.78,27.19,2.31
 mask2former,acdc_night,baseline,70,5.03,0.6,10.01,1.31,30.55,1.88
 mask2former,acdc_night,baseline,80,5.67,0.41,10.66,0.66,34.73,1.86
 mask2former,acdc_night,baseline,90,5.84,0.52,11.28,0.34,36.9,3.57
-mask2former,acdc_night,grayscale,0,28.43,1.15,42.49,2.86,62.43,0.83
+mask2former,acdc_night,grayscale,0,28.45,1.19,42.50,2.86,62.43,0.83
 mask2former,acdc_night,grayscale,10,28.56,1.32,42.62,3.0,62.48,0.79
 mask2former,acdc_night,grayscale,20,28.51,1.31,42.41,2.59,62.63,0.39
 mask2former,acdc_night,grayscale,30,29.05,1.26,42.5,2.28,62.85,0.57
@@ -61,7 +61,7 @@ mask2former,acdc_night,grayscale,60,29.64,2.59,43.26,2.37,63.54,3.17
 mask2former,acdc_night,grayscale,70,28.98,3.17,42.52,3.16,64.59,4.83
 mask2former,acdc_night,grayscale,80,25.3,1.7,39.4,2.86,62.55,3.36
 mask2former,acdc_night,grayscale,90,18.07,1.32,30.86,0.98,51.7,2.14
-mask2former,acdc_night,color-opponency,0,26.11,2.7,41.47,3.95,58.44,3.3
+mask2former,acdc_night,color-opponency,0,26.08,2.73,41.45,3.98,58.44,3.30
 mask2former,acdc_night,color-opponency,10,26.11,2.69,41.46,3.95,58.43,3.31
 mask2former,acdc_night,color-opponency,20,26.1,2.64,41.43,3.91,58.41,3.28
 mask2former,acdc_night,color-opponency,30,26.11,2.58,41.36,3.85,58.39,3.27
@@ -81,7 +81,7 @@ mask2former,acdc_night,single-color,60,27.72,0.57,42.84,2.57,62.87,2.98
 mask2former,acdc_night,single-color,70,26.97,0.4,42.11,2.19,62.96,3.07
 mask2former,acdc_night,single-color,80,24.52,1.06,38.99,1.16,60.96,3.1
 mask2former,acdc_night,single-color,90,19.28,2.23,32.35,2.02,53.07,6.76
-mask2former,cityscapes,baseline,0,77.43,0.35,86.83,0.19,96.1,0.05
+mask2former,cityscapes,baseline,0,77.43,0.35,86.83,0.19,96.10,0.05
 mask2former,cityscapes,baseline,10,74.94,1.7,85.2,1.29,95.67,0.09
 mask2former,cityscapes,baseline,20,72.52,1.74,84.52,0.66,94.64,0.29
 mask2former,cityscapes,baseline,30,65.14,3.37,81.57,0.78,92.17,1.18
@@ -91,7 +91,7 @@ mask2former,cityscapes,baseline,60,39.41,1.06,54.93,0.47,71.38,2.53
 mask2former,cityscapes,baseline,70,25.74,1.31,37.17,0.48,56.72,3.1
 mask2former,cityscapes,baseline,80,13.83,0.41,21.74,1.26,43.1,2.35
 mask2former,cityscapes,baseline,90,9.12,0.12,15.85,1.22,39.65,2.68
-mask2former,cityscapes,grayscale,0,73.93,0.8,85.33,0.92,95.59,0.13
+mask2former,cityscapes,grayscale,0,73.47,0.47,84.63,0.57,95.54,0.11
 mask2former,cityscapes,grayscale,10,73.92,0.83,85.33,0.94,95.59,0.13
 mask2former,cityscapes,grayscale,20,74.0,0.82,85.39,0.88,95.57,0.13
 mask2former,cityscapes,grayscale,30,73.78,0.63,85.25,0.74,95.51,0.11
@@ -111,7 +111,7 @@ mask2former,cityscapes,color-opponency,60,72.97,0.12,84.65,0.32,95.47,0.12
 mask2former,cityscapes,color-opponency,70,72.2,0.93,84.11,0.42,95.38,0.12
 mask2former,cityscapes,color-opponency,80,70.92,0.28,83.22,0.42,95.04,0.03
 mask2former,cityscapes,color-opponency,90,64.29,0.94,76.95,0.94,93.18,0.06
-mask2former,cityscapes,single-color,0,74.02,0.61,84.64,0.85,95.75,0.02
+mask2former,cityscapes,single-color,0,74.02,0.62,84.64,0.85,95.75,0.02
 mask2former,cityscapes,single-color,10,74.16,0.31,84.78,0.59,95.75,0.03
 mask2former,cityscapes,single-color,20,74.18,0.4,84.76,0.59,95.75,0.02
 mask2former,cityscapes,single-color,30,73.96,0.47,84.62,0.73,95.71,0.01
@@ -121,7 +121,7 @@ mask2former,cityscapes,single-color,60,71.62,0.63,82.84,0.83,95.16,0.03
 mask2former,cityscapes,single-color,70,68.81,0.91,80.45,1.35,94.51,0.03
 mask2former,cityscapes,single-color,80,62.87,0.59,74.96,1.54,92.82,0.12
 mask2former,cityscapes,single-color,90,48.23,1.28,60.23,0.99,86.53,1.2
-mask2former,dark_zurich,baseline,0,18.15,1.14,28.87,2.73,47.34,4.13
+mask2former,dark_zurich,baseline,0,18.16,1.14,28.88,2.72,47.34,4.13
 mask2former,dark_zurich,baseline,10,13.83,1.61,23.75,2.93,40.33,4.26
 mask2former,dark_zurich,baseline,20,7.79,0.81,15.41,2.12,26.95,3.86
 mask2former,dark_zurich,baseline,30,5.04,1.51,10.25,2.91,19.5,2.81
@@ -131,7 +131,7 @@ mask2former,dark_zurich,baseline,60,4.55,0.83,10.56,2.14,28.07,4.81
 mask2former,dark_zurich,baseline,70,5.41,0.74,10.9,1.61,29.87,2.86
 mask2former,dark_zurich,baseline,80,5.89,0.17,11.45,0.72,33.24,1.74
 mask2former,dark_zurich,baseline,90,6.08,0.94,12.01,0.63,35.23,4.81
-mask2former,dark_zurich,grayscale,0,26.16,0.1,40.57,2.23,59.16,0.6
+mask2former,dark_zurich,grayscale,0,26.21,0.18,40.56,2.23,59.16,0.60
 mask2former,dark_zurich,grayscale,10,26.19,0.17,40.53,2.14,59.06,0.53
 mask2former,dark_zurich,grayscale,20,26.05,0.14,40.74,1.77,59.09,0.26
 mask2former,dark_zurich,grayscale,30,26.63,0.35,41.29,1.67,59.19,0.98
@@ -141,7 +141,7 @@ mask2former,dark_zurich,grayscale,60,27.18,1.09,42.29,1.06,60.4,4.53
 mask2former,dark_zurich,grayscale,70,26.99,2.3,42.28,2.89,62.33,7.31
 mask2former,dark_zurich,grayscale,80,24.92,0.7,40.67,2.24,60.82,4.94
 mask2former,dark_zurich,grayscale,90,17.67,1.79,32.38,1.46,47.49,3.98
-mask2former,dark_zurich,color-opponency,0,22.86,1.83,37.4,2.59,55.27,2.43
+mask2former,dark_zurich,color-opponency,0,22.84,1.82,37.37,2.58,55.26,2.45
 mask2former,dark_zurich,color-opponency,10,22.87,1.81,37.4,2.6,55.26,2.44
 mask2former,dark_zurich,color-opponency,20,22.88,1.8,37.39,2.58,55.23,2.45
 mask2former,dark_zurich,color-opponency,30,22.88,1.72,37.29,2.53,55.2,2.47
@@ -151,7 +151,7 @@ mask2former,dark_zurich,color-opponency,60,23.04,1.94,37.56,2.37,55.5,2.64
 mask2former,dark_zurich,color-opponency,70,23.33,1.51,38.38,2.0,56.18,1.8
 mask2former,dark_zurich,color-opponency,80,23.38,1.06,39.13,0.66,56.21,1.64
 mask2former,dark_zurich,color-opponency,90,22.87,1.29,38.1,1.18,54.8,1.3
-mask2former,dark_zurich,single-color,0,24.94,1.1,39.66,2.37,57.1,3.53
+mask2former,dark_zurich,single-color,0,24.92,1.1,39.64,2.37,57.1,3.52
 mask2former,dark_zurich,single-color,10,24.85,1.24,39.67,2.37,57.14,3.58
 mask2former,dark_zurich,single-color,20,25.05,1.21,39.88,2.61,57.52,3.48
 mask2former,dark_zurich,single-color,30,25.18,0.97,39.97,2.54,57.51,3.45
@@ -161,7 +161,7 @@ mask2former,dark_zurich,single-color,60,25.6,1.5,40.68,3.58,60.02,3.87
 mask2former,dark_zurich,single-color,70,25.54,1.22,40.75,2.62,60.4,4.41
 mask2former,dark_zurich,single-color,80,24.73,1.05,39.21,2.25,59.46,2.54
 mask2former,dark_zurich,single-color,90,19.9,1.8,33.11,1.05,50.59,7.18
-upernet,acdc_night,baseline,0,9.64,1.84,19.0,0.63,33.43,5.45
+upernet,acdc_night,baseline,0,11.53,1.24,21.96,2.20,45.24,7.17
 upernet,acdc_night,baseline,10,7.59,0.9,16.83,0.35,29.52,2.26
 upernet,acdc_night,baseline,20,5.77,0.8,13.41,0.84,26.39,1.97
 upernet,acdc_night,baseline,30,4.52,0.32,11.02,0.43,24.28,2.44
@@ -171,7 +171,7 @@ upernet,acdc_night,baseline,60,2.55,0.27,7.43,0.71,19.86,0.29
 upernet,acdc_night,baseline,70,2.3,0.15,6.82,0.54,18.59,1.39
 upernet,acdc_night,baseline,80,2.36,0.17,7.45,0.62,18.74,3.92
 upernet,acdc_night,baseline,90,2.82,0.51,7.65,0.7,19.74,6.34
-upernet,acdc_night,grayscale,0,17.88,0.43,28.1,0.75,56.82,1.61
+upernet,acdc_night,grayscale,0,18.31,1.15,31.05,0.94,54.27,1.21
 upernet,acdc_night,grayscale,10,17.89,0.43,28.09,0.75,56.8,1.62
 upernet,acdc_night,grayscale,20,17.89,0.35,28.0,0.83,56.55,1.56
 upernet,acdc_night,grayscale,30,17.76,0.2,27.65,0.98,55.85,1.54
@@ -181,7 +181,7 @@ upernet,acdc_night,grayscale,60,15.79,0.98,25.05,2.2,49.2,3.24
 upernet,acdc_night,grayscale,70,14.05,1.61,23.3,2.82,43.52,5.57
 upernet,acdc_night,grayscale,80,11.6,1.86,20.66,3.15,36.25,7.09
 upernet,acdc_night,grayscale,90,7.97,1.31,15.38,2.04,27.44,4.11
-upernet,acdc_night,color-opponency,0,15.09,1.49,27.03,0.89,44.51,9.51
+upernet,acdc_night,color-opponency,0,16.37,0.81,28.01,1.57,50.83,3.65
 upernet,acdc_night,color-opponency,10,15.09,1.49,27.02,0.9,44.5,9.53
 upernet,acdc_night,color-opponency,20,15.06,1.51,27.0,0.92,44.37,9.73
 upernet,acdc_night,color-opponency,30,14.98,1.67,26.87,1.15,43.7,10.76
@@ -191,7 +191,7 @@ upernet,acdc_night,color-opponency,60,14.28,2.87,25.31,3.28,38.34,16.76
 upernet,acdc_night,color-opponency,70,14.03,2.97,24.58,3.44,37.88,16.49
 upernet,acdc_night,color-opponency,80,15.45,1.44,26.01,1.26,46.11,8.56
 upernet,acdc_night,color-opponency,90,14.63,1.28,24.26,2.36,46.98,6.14
-upernet,acdc_night,single-color,0,14.3,1.86,26.64,1.33,46.29,6.03
+upernet,acdc_night,single-color,0,14.64,1.36,28.31,1.02,49.00,4.06
 upernet,acdc_night,single-color,10,14.29,1.88,26.62,1.36,46.23,6.08
 upernet,acdc_night,single-color,20,14.21,2.0,26.42,1.59,45.83,6.5
 upernet,acdc_night,single-color,30,13.98,2.25,25.79,2.22,44.8,7.57
@@ -201,7 +201,7 @@ upernet,acdc_night,single-color,60,12.47,3.39,22.69,3.63,37.57,13.14
 upernet,acdc_night,single-color,70,11.7,3.51,21.53,3.66,35.4,14.84
 upernet,acdc_night,single-color,80,11.04,3.58,20.89,3.59,34.56,14.96
 upernet,acdc_night,single-color,90,9.83,2.75,19.31,1.94,32.89,11.1
-upernet,cityscapes,baseline,0,61.87,0.21,69.87,1.49,94.01,0.34
+upernet,cityscapes,baseline,0,64.64,1.93,72.63,1.25,94.42,0.17
 upernet,cityscapes,baseline,10,60.53,0.18,69.01,1.52,93.3,0.52
 upernet,cityscapes,baseline,20,55.74,0.61,66.58,1.59,89.85,1.2
 upernet,cityscapes,baseline,30,48.11,0.36,61.91,1.76,81.03,1.86
@@ -211,7 +211,7 @@ upernet,cityscapes,baseline,60,23.46,2.0,35.19,3.52,49.91,3.78
 upernet,cityscapes,baseline,70,13.31,2.76,21.77,3.09,38.38,6.43
 upernet,cityscapes,baseline,80,6.07,2.21,12.03,2.55,27.7,8.67
 upernet,cityscapes,baseline,90,3.76,1.55,8.76,2.34,22.85,6.46
-upernet,cityscapes,grayscale,0,59.5,0.94,67.65,1.91,93.7,0.04
+upernet,cityscapes,grayscale,0,62.63,1.79,71.37,1.79,93.85,0.11
 upernet,cityscapes,grayscale,10,59.5,0.93,67.65,1.9,93.7,0.04
 upernet,cityscapes,grayscale,20,59.49,0.94,67.64,1.92,93.67,0.06
 upernet,cityscapes,grayscale,30,59.31,1.03,67.44,1.94,93.52,0.13
@@ -221,7 +221,7 @@ upernet,cityscapes,grayscale,60,52.71,2.3,61.72,1.93,85.49,5.59
 upernet,cityscapes,grayscale,70,46.46,2.51,55.98,2.3,76.71,5.48
 upernet,cityscapes,grayscale,80,35.23,3.05,45.19,2.8,62.44,3.21
 upernet,cityscapes,grayscale,90,18.82,3.08,26.69,2.7,45.14,1.91
-upernet,cityscapes,color-opponency,0,61.93,0.88,70.28,0.72,94.35,0.12
+upernet,cityscapes,color-opponency,0,64.33,1.32,72.12,1.90,94.63,0.13
 upernet,cityscapes,color-opponency,10,61.93,0.87,70.26,0.72,94.35,0.12
 upernet,cityscapes,color-opponency,20,61.94,0.8,70.25,0.75,94.34,0.11
 upernet,cityscapes,color-opponency,30,61.94,0.65,70.23,0.83,94.29,0.12
@@ -231,7 +231,7 @@ upernet,cityscapes,color-opponency,60,58.32,1.82,68.01,0.78,90.56,3.36
 upernet,cityscapes,color-opponency,70,55.92,2.05,65.75,0.74,87.34,6.33
 upernet,cityscapes,color-opponency,80,53.16,1.38,62.63,1.45,87.6,4.38
 upernet,cityscapes,color-opponency,90,42.8,2.63,52.11,3.28,80.36,6.53
-upernet,cityscapes,single-color,0,63.17,1.77,71.45,2.05,94.45,0.07
+upernet,cityscapes,single-color,0,63.37,2.80,72.26,2.80,94.47,0.20
 upernet,cityscapes,single-color,10,63.17,1.8,71.44,2.07,94.45,0.07
 upernet,cityscapes,single-color,20,63.14,1.85,71.44,2.13,94.39,0.09
 upernet,cityscapes,single-color,30,62.91,1.76,71.35,2.13,94.14,0.3
@@ -241,7 +241,7 @@ upernet,cityscapes,single-color,60,57.14,0.66,67.34,1.43,89.02,3.81
 upernet,cityscapes,single-color,70,52.75,1.2,63.31,1.05,85.33,4.88
 upernet,cityscapes,single-color,80,44.34,1.67,55.23,0.76,78.06,6.37
 upernet,cityscapes,single-color,90,26.04,2.5,37.0,1.32,58.31,9.31
-upernet,dark_zurich,baseline,0,10.07,1.49,17.46,2.39,32.29,5.55
+upernet,dark_zurich,baseline,0,11.42,0.58,21.92,2.60,42.86,6.74
 upernet,dark_zurich,baseline,10,8.28,0.97,15.14,2.07,29.34,3.08
 upernet,dark_zurich,baseline,20,6.19,0.36,12.43,1.23,26.52,2.59
 upernet,dark_zurich,baseline,30,4.34,0.07,9.72,1.23,23.57,2.05
@@ -251,7 +251,7 @@ upernet,dark_zurich,baseline,60,2.29,0.35,6.53,0.14,18.52,2.15
 upernet,dark_zurich,baseline,70,2.21,0.4,6.12,0.3,18.37,2.8
 upernet,dark_zurich,baseline,80,2.39,0.42,6.36,0.63,18.95,4.74
 upernet,dark_zurich,baseline,90,2.97,0.84,6.18,1.83,20.57,8.1
-upernet,dark_zurich,grayscale,0,17.66,0.47,29.58,0.75,53.4,2.25
+upernet,dark_zurich,grayscale,0,18.03,1.82,32.15,1.79,50.00,1.10
 upernet,dark_zurich,grayscale,10,17.66,0.47,29.58,0.74,53.38,2.28
 upernet,dark_zurich,grayscale,20,17.69,0.42,29.55,0.79,53.18,2.15
 upernet,dark_zurich,grayscale,30,17.63,0.32,29.32,1.16,52.49,2.07
@@ -261,7 +261,7 @@ upernet,dark_zurich,grayscale,60,16.29,0.7,26.77,2.46,46.4,2.42
 upernet,dark_zurich,grayscale,70,14.6,1.46,25.06,3.03,41.88,4.26
 upernet,dark_zurich,grayscale,80,12.06,1.96,22.23,3.37,35.57,6.17
 upernet,dark_zurich,grayscale,90,8.3,1.44,16.77,2.36,26.22,4.0
-upernet,dark_zurich,color-opponency,0,14.31,1.88,26.85,1.97,40.99,9.39
+upernet,dark_zurich,color-opponency,0,16.10,0.95,29.13,1.21,46.56,4.08
 upernet,dark_zurich,color-opponency,10,14.31,1.89,26.85,1.98,40.99,9.4
 upernet,dark_zurich,color-opponency,20,14.29,1.9,26.81,2.03,40.88,9.58
 upernet,dark_zurich,color-opponency,30,14.17,2.09,26.63,2.37,40.21,10.48
@@ -271,7 +271,7 @@ upernet,dark_zurich,color-opponency,60,13.28,3.54,25.34,4.59,35.2,15.38
 upernet,dark_zurich,color-opponency,70,13.26,3.83,25.27,4.74,35.31,15.25
 upernet,dark_zurich,color-opponency,80,14.49,1.88,26.86,1.7,43.31,8.2
 upernet,dark_zurich,color-opponency,90,13.96,1.78,25.09,3.02,45.9,5.05
-upernet,dark_zurich,single-color,0,13.47,2.45,25.99,2.23,41.43,6.72
+upernet,dark_zurich,single-color,0,13.82,1.52,27.68,1.50,44.06,3.62
 upernet,dark_zurich,single-color,10,13.47,2.46,25.99,2.26,41.37,6.76
 upernet,dark_zurich,single-color,20,13.38,2.53,25.78,2.51,40.96,7.07
 upernet,dark_zurich,single-color,30,13.3,2.76,25.35,3.12,40.11,7.92
