@@ -1,0 +1,56 @@
+\begin{table}[h]
+  \centering
+  \caption{For deeplabv3plus on acdc_full: all sparsities (incl. '-') and preprocessings}
+  \begin{tabular}{@{}l l c c c c@{}}
+    \toprule
+    Architecture & Preprocessing & Sparsity & mIoU & mAcc & aAcc \\
+    \midrule
+    \multirow{4}{*}{DeepLabv3+} & - & \multirow{4}{*}{0\%} & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 \\
+    & Luminance &  & 35.82~$\pm$~0.96 & 45.87~$\pm$~1.79 & 77.27~$\pm$~2.44 \\
+    & Color-opponency &  & 33.60~$\pm$~1.38 & 44.12~$\pm$~0.84 & 73.37~$\pm$~4.99 \\
+    & Single-color &  & 34.36~$\pm$~2.05 & 46.82~$\pm$~1.89 & 74.06~$\pm$~4.99 \\
+    \midrule
+    \multirow{4}{*}{DeepLabv3+} & - & \multirow{4}{*}{1\%} & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 \\
+    & Luminance &  & 35.87~$\pm$~1.04 & 46.92~$\pm$~2.14 & 79.04~$\pm$~1.28 \\
+    & Color-opponency &  & 32.69~$\pm$~1.14 & 42.49~$\pm$~0.07 & 76.08~$\pm$~2.53 \\
+    & Single-color &  & 33.82~$\pm$~2.44 & 45.52~$\pm$~0.94 & 70.72~$\pm$~2.56 \\
+    \midrule
+    \multirow{4}{*}{DeepLabv3+} & - & \multirow{4}{*}{2\%} & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 & 0.00 ~$\pm$~ 0.00 \\
+    & Luminance &  & 35.52~$\pm$~0.16 & 45.38~$\pm$~0.56 & 78.61~$\pm$~1.50 \\
+    & Color-opponency &  & 35.37~$\pm$~1.55 & 44.23~$\pm$~1.97 & 77.49~$\pm$~1.33 \\
+    & Single-color &  & 33.92~$\pm$~1.60 & 44.08~$\pm$~2.60 & 76.71~$\pm$~1.72 \\
+    \midrule
+    \multirow{4}{*}{DeepLabv3+} & - & \multirow{4}{*}{40\%} & 22.86~$\pm$~0.96 & 37.07~$\pm$~3.11 & 62.10~$\pm$~1.49 \\
+    & Luminance &  & 34.95~$\pm$~0.76 & 46.55~$\pm$~0.46 & 77.95~$\pm$~1.16 \\
+    & Color-opponency &  & 33.16~$\pm$~1.36 & 44.36~$\pm$~0.68 & 73.68~$\pm$~2.38 \\
+    & Single-color &  & 33.87~$\pm$~1.66 & 45.48~$\pm$~1.60 & 74.83~$\pm$~2.23 \\
+    \midrule
+    \multirow{4}{*}{DeepLabv3+} & - & \multirow{4}{*}{50\%} & 18.87~$\pm$~2.19 & 33.56~$\pm$~3.25 & 56.54~$\pm$~3.41 \\
+    & Luminance &  & 35.86~$\pm$~2.28 & 46.36~$\pm$~1.12 & 77.44~$\pm$~2.59 \\
+    & Color-opponency &  & 34.58~$\pm$~1.26 & 46.03~$\pm$~0.52 & 76.70~$\pm$~1.86 \\
+    & Single-color &  & 34.36~$\pm$~1.37 & 45.14~$\pm$~1.79 & 77.17~$\pm$~0.70 \\
+    \midrule
+    \multirow{4}{*}{DeepLabv3+} & - & \multirow{4}{*}{60\%} & 18.15~$\pm$~1.10 & 31.93~$\pm$~1.42 & 59.37~$\pm$~1.58 \\
+    & Luminance &  & 34.17~$\pm$~0.96 & 44.02~$\pm$~1.51 & 75.38~$\pm$~2.72 \\
+    & Color-opponency &  & 35.58~$\pm$~2.58 & 46.26~$\pm$~4.20 & 76.77~$\pm$~3.23 \\
+    & Single-color &  & 33.99~$\pm$~3.25 & 44.66~$\pm$~3.14 & 76.02~$\pm$~3.73 \\
+    \midrule
+    \multirow{4}{*}{DeepLabv3+} & - & \multirow{4}{*}{70\%} & 17.11~$\pm$~2.12 & 29.87~$\pm$~3.01 & 59.10~$\pm$~3.31 \\
+    & Luminance &  & 31.93~$\pm$~1.61 & 40.82~$\pm$~1.84 & 75.36~$\pm$~1.42 \\
+    & Color-opponency &  & 33.55~$\pm$~0.17 & 44.37~$\pm$~0.47 & 74.35~$\pm$~2.64 \\
+    & Single-color &  & 32.04~$\pm$~0.54 & 41.14~$\pm$~1.18 & 74.19~$\pm$~2.08 \\
+    \midrule
+    \multirow{4}{*}{DeepLabv3+} & - & \multirow{4}{*}{80\%} & 13.57~$\pm$~1.99 & 21.96~$\pm$~2.85 & 51.08~$\pm$~7.02 \\
+    & Luminance &  & 30.63~$\pm$~4.56 & 39.05~$\pm$~3.92 & 69.96~$\pm$~6.46 \\
+    & Color-opponency &  & 35.00~$\pm$~0.47 & 44.28~$\pm$~0.45 & 77.10~$\pm$~1.23 \\
+    & Single-color &  & 31.44~$\pm$~1.36 & 39.82~$\pm$~0.76 & 75.59~$\pm$~1.15 \\
+    \midrule
+    \multirow{4}{*}{DeepLabv3+} & - & \multirow{4}{*}{90\%} & 10.48~$\pm$~0.88 & 16.83~$\pm$~1.26 & 48.62~$\pm$~3.93 \\
+    & Luminance &  & 28.38~$\pm$~1.64 & 36.92~$\pm$~0.95 & 69.76~$\pm$~3.54 \\
+    & Color-opponency &  & 33.39~$\pm$~1.33 & 42.63~$\pm$~1.10 & 74.86~$\pm$~2.69 \\
+    & Single-color &  & 24.19~$\pm$~3.24 & 31.66~$\pm$~2.62 & 65.91~$\pm$~7.92 \\
+    \midrule
+    \bottomrule
+  \end{tabular}
+  \label{tab:deeplabv3plus_acdc_full}
+\end{table}

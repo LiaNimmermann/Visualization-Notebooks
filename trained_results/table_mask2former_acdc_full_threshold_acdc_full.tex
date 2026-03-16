@@ -1,0 +1,34 @@
+\begin{table}[h]
+  \centering
+  \caption{Evaluation of the mask2former architecture trained on Cityscapes and \textbf{validated on acdc_full} at different sparsities.}
+  \begin{tabular}{@{}lccc ccc@{}}
+    \toprule
+    Architecture & Preprocessing & Sparsity & mIoU & mAcc & aAcc \\
+    \midrule
+    Mask2Former & - & - & 42.05 ~$\pm$~ 1.42 & 60.14 ~$\pm$~ 2.22 & 77.94 ~$\pm$~ 1.35 \\
+    \midrule
+    \midrule
+    \multirow{3}{*}{Mask2Former} & Luminance & \multirow{3}{*}{-} & 47.13 ~$\pm$~ 0.66 & 60.04 ~$\pm$~ 1.96 & 81.63 ~$\pm$~ 1.35 \\
+    & Color-opponency & & 44.93 ~$\pm$~ 0.66 & 58.83 ~$\pm$~ 0.87 & 79.18 ~$\pm$~ 0.62 \\
+    & Single-color & & 45.24 ~$\pm$~ 1.76 & 59.87 ~$\pm$~ 2.54 & 79.63 ~$\pm$~ 2.76 \\
+    \midrule
+    \multirow{3}{*}{Mask2Former} & Luminance & \multirow{3}{*}{0.005\%} & 47.21 ~$\pm$~ 2.28 & 60.01 ~$\pm$~ 1.66 & 82.64 ~$\pm$~ 1.75 \\
+    & Color-opponency & & 45.43 ~$\pm$~ 1.53 & 59.11 ~$\pm$~ 1.40 & 79.75 ~$\pm$~ 1.26 \\
+    & Single-color & & 45.64 ~$\pm$~ 2.38 & 60.73 ~$\pm$~ 1.41 & 80.40 ~$\pm$~ 0.87 \\
+    \midrule
+    \multirow{3}{*}{Mask2Former} & Luminance & \multirow{3}{*}{0.0075\%} & 47.33 ~$\pm$~ 1.61 & 60.29 ~$\pm$~ 1.44 & 81.46 ~$\pm$~ 0.77 \\
+    & Color-opponency & & 46.73 ~$\pm$~ 1.66 & 59.47 ~$\pm$~ 1.12 & 81.58 ~$\pm$~ 0.62 \\
+    & Single-color & & 44.05 ~$\pm$~ 1.70 & 57.93 ~$\pm$~ 2.15 & 78.75 ~$\pm$~ 1.29 \\
+    \midrule
+    \multirow{3}{*}{Mask2Former} & Luminance & \multirow{3}{*}{0.01\%} & 46.25 ~$\pm$~ 1.85 & 58.72 ~$\pm$~ 0.26 & 81.93 ~$\pm$~ 1.27 \\
+    & Color-opponency & & 45.34 ~$\pm$~ 2.50 & 58.05 ~$\pm$~ 1.33 & 80.33 ~$\pm$~ 1.02 \\
+    & Single-color & & 45.42 ~$\pm$~ 0.70 & 60.61 ~$\pm$~ 1.68 & 80.08 ~$\pm$~ 1.20 \\
+    \midrule
+    \multirow{3}{*}{Mask2Former} & Luminance & \multirow{3}{*}{0.02\%} & 45.68 ~$\pm$~ 1.11 & 56.75 ~$\pm$~ 1.12 & 80.60 ~$\pm$~ 1.29 \\
+    & Color-opponency & & 42.46 ~$\pm$~ 1.76 & 54.13 ~$\pm$~ 1.27 & 78.00 ~$\pm$~ 1.03 \\
+    & Single-color & & 41.89 ~$\pm$~ 2.70 & 56.23 ~$\pm$~ 3.78 & 76.58 ~$\pm$~ 3.19 \\
+    \midrule
+    \bottomrule
+  \end{tabular}
+  \label{tab:sparse_mask2former_acdc_full}
+\end{table}

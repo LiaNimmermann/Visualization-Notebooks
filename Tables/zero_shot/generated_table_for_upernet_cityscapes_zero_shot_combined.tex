@@ -1,0 +1,62 @@
+\begin{table}[h]
+\centering
+\caption{Results for the upernet architecture validated on cityscapes at different sparsities.}
+\begin{tabular}{@{}lccc ccc@{}}
+\toprule
+Architecture & Preprocessing & Sparsity & mIoU & mAcc & aAcc \\
+\midrule
+
+\multirow{4}{*}{UPerNet} & - & \multirow{4}{*}{-} & 61.87~$\pm$~0.21 & 69.87~$\pm$~1.49 & 94.01~$\pm$~0.34 \\
+& Luminance & & 59.50~$\pm$~0.94 & 67.65~$\pm$~1.91 & 93.70~$\pm$~0.04 \\
+& Color-opponency & & 61.93~$\pm$~0.88 & 70.28~$\pm$~0.72 & 94.35~$\pm$~0.12 \\
+& Single-color & & 63.17~$\pm$~1.77 & 71.45~$\pm$~2.05 & 94.45~$\pm$~0.07 \\
+\midrule
+\multirow{4}{*}{UPerNet} & - & \multirow{4}{*}{10\%} & 60.53~$\pm$~0.18 & 69.01~$\pm$~1.52 & 93.30~$\pm$~0.52 \\
+& Luminance & & 59.50~$\pm$~0.93 & 67.65~$\pm$~1.90 & 93.70~$\pm$~0.04 \\
+& Color-opponency & & 61.93~$\pm$~0.87 & 70.26~$\pm$~0.72 & 94.35~$\pm$~0.12 \\
+& Single-color & & 63.17~$\pm$~1.80 & 71.44~$\pm$~2.07 & 94.45~$\pm$~0.07 \\
+\midrule
+\multirow{4}{*}{UPerNet} & - & \multirow{4}{*}{20\%} & 55.74~$\pm$~0.61 & 66.58~$\pm$~1.59 & 89.85~$\pm$~1.20 \\
+& Luminance & & 59.49~$\pm$~0.94 & 67.64~$\pm$~1.92 & 93.67~$\pm$~0.06 \\
+& Color-opponency & & 61.94~$\pm$~0.80 & 70.25~$\pm$~0.75 & 94.34~$\pm$~0.11 \\
+& Single-color & & 63.14~$\pm$~1.85 & 71.44~$\pm$~2.13 & 94.39~$\pm$~0.09 \\
+\midrule
+\multirow{4}{*}{UPerNet} & - & \multirow{4}{*}{30\%} & 48.11~$\pm$~0.36 & 61.91~$\pm$~1.76 & 81.03~$\pm$~1.86 \\
+& Luminance & & 59.31~$\pm$~1.03 & 67.44~$\pm$~1.94 & 93.52~$\pm$~0.13 \\
+& Color-opponency & & 61.94~$\pm$~0.65 & 70.23~$\pm$~0.83 & 94.29~$\pm$~0.12 \\
+& Single-color & & 62.91~$\pm$~1.76 & 71.35~$\pm$~2.13 & 94.14~$\pm$~0.30 \\
+\midrule
+\multirow{4}{*}{UPerNet} & - & \multirow{4}{*}{40\%} & 39.86~$\pm$~0.58 & 55.17~$\pm$~1.76 & 68.90~$\pm$~1.47 \\
+& Luminance & & 58.57~$\pm$~1.21 & 66.89~$\pm$~1.88 & 92.90~$\pm$~0.63 \\
+& Color-opponency & & 61.75~$\pm$~0.56 & 70.09~$\pm$~0.96 & 94.16~$\pm$~0.16 \\
+& Single-color & & 62.25~$\pm$~1.48 & 70.99~$\pm$~2.04 & 93.59~$\pm$~0.83 \\
+\midrule
+\multirow{4}{*}{UPerNet} & - & \multirow{4}{*}{50\%} & 32.16~$\pm$~0.44 & 46.58~$\pm$~2.53 & 59.16~$\pm$~2.18 \\
+& Luminance & & 56.44~$\pm$~1.83 & 65.02~$\pm$~1.76 & 90.75~$\pm$~2.56 \\
+& Color-opponency & & 60.59~$\pm$~1.10 & 69.50~$\pm$~1.03 & 93.49~$\pm$~0.56 \\
+& Single-color & & 60.32~$\pm$~0.95 & 69.87~$\pm$~1.84 & 91.88~$\pm$~2.25 \\
+\midrule
+\multirow{4}{*}{UPerNet} & - & \multirow{4}{*}{60\%} & 23.46~$\pm$~2.00 & 35.19~$\pm$~3.52 & 49.91~$\pm$~3.78 \\
+& Luminance & & 52.71~$\pm$~2.30 & 61.72~$\pm$~1.93 & 85.49~$\pm$~5.59 \\
+& Color-opponency & & 58.32~$\pm$~1.82 & 68.01~$\pm$~0.78 & 90.56~$\pm$~3.36 \\
+& Single-color & & 57.14~$\pm$~0.66 & 67.34~$\pm$~1.43 & 89.02~$\pm$~3.81 \\
+\midrule
+\multirow{4}{*}{UPerNet} & - & \multirow{4}{*}{70\%} & 13.31~$\pm$~2.76 & 21.77~$\pm$~3.09 & 38.38~$\pm$~6.43 \\
+& Luminance & & 46.46~$\pm$~2.51 & 55.98~$\pm$~2.30 & 76.71~$\pm$~5.48 \\
+& Color-opponency & & 55.92~$\pm$~2.05 & 65.75~$\pm$~0.74 & 87.34~$\pm$~6.33 \\
+& Single-color & & 52.75~$\pm$~1.20 & 63.31~$\pm$~1.05 & 85.33~$\pm$~4.88 \\
+\midrule
+\multirow{4}{*}{UPerNet} & - & \multirow{4}{*}{80\%} & 6.07~$\pm$~2.21 & 12.03~$\pm$~2.55 & 27.70~$\pm$~8.67 \\
+& Luminance & & 35.23~$\pm$~3.05 & 45.19~$\pm$~2.80 & 62.44~$\pm$~3.21 \\
+& Color-opponency & & 53.16~$\pm$~1.38 & 62.63~$\pm$~1.45 & 87.60~$\pm$~4.38 \\
+& Single-color & & 44.34~$\pm$~1.67 & 55.23~$\pm$~0.76 & 78.06~$\pm$~6.37 \\
+\midrule
+\multirow{4}{*}{UPerNet} & - & \multirow{4}{*}{90\%} & 3.76~$\pm$~1.55 & 8.76~$\pm$~2.34 & 22.85~$\pm$~6.46 \\
+& Luminance & & 18.82~$\pm$~3.08 & 26.69~$\pm$~2.70 & 45.14~$\pm$~1.91 \\
+& Color-opponency & & 42.80~$\pm$~2.63 & 52.11~$\pm$~3.28 & 80.36~$\pm$~6.53 \\
+& Single-color & & 26.04~$\pm$~2.50 & 37.00~$\pm$~1.32 & 58.31~$\pm$~9.31 \\
+\midrule
+\bottomrule
+\end{tabular}
+\label{tab:sparse_results_upernet_cityscapes}
+\end{table}

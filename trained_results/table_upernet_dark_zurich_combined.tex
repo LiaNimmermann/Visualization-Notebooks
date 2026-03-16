@@ -1,0 +1,46 @@
+\begin{table}[h]
+  \centering
+  \caption{For upernet on dark_zurich: all sparsities (incl. '-') and preprocessings}
+  \begin{tabular}{@{}l l c c c c@{}}
+    \toprule
+    Architecture & Preprocessing & Sparsity & mIoU & mAcc & aAcc \\
+    \midrule
+    \multirow{4}{*}{UPerNet} & - & \multirow{4}{*}{-} & 11.42 ~$\pm$~ 0.58 & 21.92 ~$\pm$~ 2.60 & 42.86 ~$\pm$~ 6.74 \\
+    & Luminance &  & 18.03 ~$\pm$~ 1.82 & 32.15 ~$\pm$~ 1.79 & 50.00 ~$\pm$~ 1.10 \\
+    & Color-opponency &  & 16.10 ~$\pm$~ 0.95 & 29.13 ~$\pm$~ 1.21 & 46.56 ~$\pm$~ 4.08 \\
+    & Single-color &  & 13.82 ~$\pm$~ 1.52 & 27.68 ~$\pm$~ 1.50 & 44.06 ~$\pm$~ 3.62 \\
+    \midrule
+    \multirow{4}{*}{UPerNet} & - & \multirow{4}{*}{40\%} & 11.68 ~$\pm$~ 1.77 & 17.55 ~$\pm$~ 3.61 & 43.33 ~$\pm$~ 8.15 \\
+    & Luminance &  & 17.00 ~$\pm$~ 0.84 & 28.83 ~$\pm$~ 2.63 & 50.89 ~$\pm$~ 0.98 \\
+    & Color-opponency &  & 15.66 ~$\pm$~ 1.77 & 28.69 ~$\pm$~ 1.37 & 48.64 ~$\pm$~ 1.52 \\
+    & Single-color &  & 16.01 ~$\pm$~ 2.47 & 28.70 ~$\pm$~ 2.72 & 49.09 ~$\pm$~ 8.97 \\
+    \midrule
+    \multirow{4}{*}{UPerNet} & - & \multirow{4}{*}{50\%} & 11.63 ~$\pm$~ 1.88 & 18.67 ~$\pm$~ 2.59 & 45.84 ~$\pm$~ 3.95 \\
+    & Luminance &  & 18.41 ~$\pm$~ 1.45 & 31.65 ~$\pm$~ 0.84 & 53.84 ~$\pm$~ 0.65 \\
+    & Color-opponency &  & 17.18 ~$\pm$~ 0.97 & 30.47 ~$\pm$~ 0.73 & 49.65 ~$\pm$~ 4.33 \\
+    & Single-color &  & 16.47 ~$\pm$~ 0.89 & 29.15 ~$\pm$~ 2.23 & 46.33 ~$\pm$~ 5.58 \\
+    \midrule
+    \multirow{4}{*}{UPerNet} & - & \multirow{4}{*}{60\%} & 12.87 ~$\pm$~ 2.79 & 20.23 ~$\pm$~ 4.37 & 48.49 ~$\pm$~ 4.16 \\
+    & Luminance &  & 17.66 ~$\pm$~ 0.19 & 28.73 ~$\pm$~ 0.66 & 54.70 ~$\pm$~ 0.77 \\
+    & Color-opponency &  & 17.42 ~$\pm$~ 1.41 & 29.71 ~$\pm$~ 1.94 & 49.31 ~$\pm$~ 4.95 \\
+    & Single-color &  & 16.20 ~$\pm$~ 0.76 & 28.99 ~$\pm$~ 1.20 & 49.84 ~$\pm$~ 2.38 \\
+    \midrule
+    \multirow{4}{*}{UPerNet} & - & \multirow{4}{*}{70\%} & 11.12 ~$\pm$~ 2.68 & 18.94 ~$\pm$~ 4.07 & 47.82 ~$\pm$~ 5.20 \\
+    & Luminance &  & 16.83 ~$\pm$~ 1.87 & 27.68 ~$\pm$~ 1.57 & 52.38 ~$\pm$~ 1.66 \\
+    & Color-opponency &  & 17.84 ~$\pm$~ 2.02 & 31.46 ~$\pm$~ 0.88 & 54.26 ~$\pm$~ 2.32 \\
+    & Single-color &  & 14.74 ~$\pm$~ 0.76 & 26.73 ~$\pm$~ 1.84 & 44.97 ~$\pm$~ 0.28 \\
+    \midrule
+    \multirow{4}{*}{UPerNet} & - & \multirow{4}{*}{80\%} & 9.65 ~$\pm$~ 1.97 & 18.60 ~$\pm$~ 1.54 & 42.93 ~$\pm$~ 3.83 \\
+    & Luminance &  & 15.18 ~$\pm$~ 1.25 & 26.69 ~$\pm$~ 2.62 & 47.55 ~$\pm$~ 3.37 \\
+    & Color-opponency &  & 16.71 ~$\pm$~ 0.44 & 28.19 ~$\pm$~ 2.11 & 50.47 ~$\pm$~ 2.57 \\
+    & Single-color &  & 12.24 ~$\pm$~ 1.40 & 22.90 ~$\pm$~ 3.00 & 33.62 ~$\pm$~ 10.31 \\
+    \midrule
+    \multirow{4}{*}{UPerNet} & - & \multirow{4}{*}{90\%} & 9.39 ~$\pm$~ 0.33 & 17.40 ~$\pm$~ 1.22 & 45.29 ~$\pm$~ 1.43 \\
+    & Luminance &  & 11.54 ~$\pm$~ 0.67 & 20.59 ~$\pm$~ 1.84 & 38.06 ~$\pm$~ 4.23 \\
+    & Color-opponency &  & 15.01 ~$\pm$~ 2.05 & 26.59 ~$\pm$~ 1.51 & 47.53 ~$\pm$~ 3.17 \\
+    & Single-color &  & 12.20 ~$\pm$~ 1.10 & 23.65 ~$\pm$~ 1.55 & 39.98 ~$\pm$~ 6.99 \\
+    \midrule
+    \bottomrule
+  \end{tabular}
+  \label{tab:upernet_dark_zurich}
+\end{table}

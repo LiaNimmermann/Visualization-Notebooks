@@ -1,0 +1,46 @@
+\begin{table}[h]
+  \centering
+  \caption{For upernet on acdc_rain: all sparsities (incl. '-') and preprocessings}
+  \begin{tabular}{@{}l l c c c c@{}}
+    \toprule
+    Architecture & Preprocessing & Sparsity & mIoU & mAcc & aAcc \\
+    \midrule
+    \multirow{4}{*}{UPerNet} & - & \multirow{4}{*}{-} & 35.35 ~$\pm$~ 2.12 & 48.51 ~$\pm$~ 2.46 & 81.44 ~$\pm$~ 4.98 \\
+    & Luminance &  & 29.31 ~$\pm$~ 0.53 & 40.70 ~$\pm$~ 2.36 & 69.42 ~$\pm$~ 5.65 \\
+    & Color-opponency &  & 34.28 ~$\pm$~ 1.23 & 45.48 ~$\pm$~ 1.77 & 76.43 ~$\pm$~ 5.73 \\
+    & Single-color &  & 33.33 ~$\pm$~ 0.70 & 44.17 ~$\pm$~ 0.54 & 73.36 ~$\pm$~ 5.19 \\
+    \midrule
+    \multirow{4}{*}{UPerNet} & - & \multirow{4}{*}{40\%} & 15.27 ~$\pm$~ 0.84 & 22.42 ~$\pm$~ 2.54 & 45.28 ~$\pm$~ 2.60 \\
+    & Luminance &  & 32.19 ~$\pm$~ 1.31 & 40.87 ~$\pm$~ 2.74 & 80.24 ~$\pm$~ 1.87 \\
+    & Color-opponency &  & 35.98 ~$\pm$~ 0.50 & 46.98 ~$\pm$~ 1.03 & 81.20 ~$\pm$~ 2.18 \\
+    & Single-color &  & 34.77 ~$\pm$~ 0.99 & 45.03 ~$\pm$~ 1.84 & 79.59 ~$\pm$~ 2.34 \\
+    \midrule
+    \multirow{4}{*}{UPerNet} & - & \multirow{4}{*}{50\%} & 18.72 ~$\pm$~ 1.03 & 25.69 ~$\pm$~ 1.30 & 60.83 ~$\pm$~ 3.05 \\
+    & Luminance &  & 30.74 ~$\pm$~ 0.55 & 39.64 ~$\pm$~ 0.65 & 75.50 ~$\pm$~ 3.60 \\
+    & Color-opponency &  & 33.28 ~$\pm$~ 0.57 & 45.36 ~$\pm$~ 1.80 & 72.85 ~$\pm$~ 2.16 \\
+    & Single-color &  & 35.58 ~$\pm$~ 1.04 & 47.21 ~$\pm$~ 1.46 & 81.34 ~$\pm$~ 0.56 \\
+    \midrule
+    \multirow{4}{*}{UPerNet} & - & \multirow{4}{*}{60\%} & 20.08 ~$\pm$~ 1.91 & 26.46 ~$\pm$~ 2.77 & 65.28 ~$\pm$~ 1.74 \\
+    & Luminance &  & 31.45 ~$\pm$~ 0.67 & 40.19 ~$\pm$~ 1.60 & 78.10 ~$\pm$~ 3.85 \\
+    & Color-opponency &  & 33.13 ~$\pm$~ 2.48 & 43.80 ~$\pm$~ 2.08 & 78.27 ~$\pm$~ 5.70 \\
+    & Single-color &  & 35.34 ~$\pm$~ 1.64 & 44.60 ~$\pm$~ 1.51 & 81.55 ~$\pm$~ 2.66 \\
+    \midrule
+    \multirow{4}{*}{UPerNet} & - & \multirow{4}{*}{70\%} & 13.91 ~$\pm$~ 5.23 & 19.89 ~$\pm$~ 6.45 & 51.91 ~$\pm$~ 17.81 \\
+    & Luminance &  & 30.99 ~$\pm$~ 2.91 & 38.28 ~$\pm$~ 4.15 & 78.02 ~$\pm$~ 2.54 \\
+    & Color-opponency &  & 32.82 ~$\pm$~ 1.47 & 42.89 ~$\pm$~ 1.39 & 76.19 ~$\pm$~ 3.50 \\
+    & Single-color &  & 33.69 ~$\pm$~ 1.22 & 41.47 ~$\pm$~ 1.78 & 82.07 ~$\pm$~ 2.90 \\
+    \midrule
+    \multirow{4}{*}{UPerNet} & - & \multirow{4}{*}{80\%} & 14.86 ~$\pm$~ 3.84 & 22.42 ~$\pm$~ 2.49 & 58.06 ~$\pm$~ 9.43 \\
+    & Luminance &  & 30.26 ~$\pm$~ 1.60 & 36.81 ~$\pm$~ 2.63 & 81.88 ~$\pm$~ 2.14 \\
+    & Color-opponency &  & 31.61 ~$\pm$~ 2.16 & 40.70 ~$\pm$~ 1.83 & 76.77 ~$\pm$~ 6.40 \\
+    & Single-color &  & 30.43 ~$\pm$~ 1.11 & 37.56 ~$\pm$~ 0.55 & 77.78 ~$\pm$~ 4.12 \\
+    \midrule
+    \multirow{4}{*}{UPerNet} & - & \multirow{4}{*}{90\%} & 16.36 ~$\pm$~ 0.89 & 23.53 ~$\pm$~ 1.83 & 66.59 ~$\pm$~ 3.07 \\
+    & Luminance &  & 26.99 ~$\pm$~ 0.79 & 33.21 ~$\pm$~ 0.84 & 78.19 ~$\pm$~ 2.00 \\
+    & Color-opponency &  & 32.63 ~$\pm$~ 1.36 & 40.50 ~$\pm$~ 2.01 & 80.90 ~$\pm$~ 1.04 \\
+    & Single-color &  & 23.46 ~$\pm$~ 1.39 & 29.43 ~$\pm$~ 1.93 & 74.28 ~$\pm$~ 2.73 \\
+    \midrule
+    \bottomrule
+  \end{tabular}
+  \label{tab:upernet_acdc_rain}
+\end{table}
