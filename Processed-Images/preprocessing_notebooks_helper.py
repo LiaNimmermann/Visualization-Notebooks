@@ -14,8 +14,9 @@ import torchvision.transforms as T
 import seaborn as sns
 
 
-def save_image_co(image_tensor, where, image_name, channels, savepath, single_channel_images=True, save_as_pdf=False):
-
+def save_image_co(image_tensor, where, image_name, channels, savepath, single_channel_images=True, save_as_pdf=False, div_boundary=5):
+    print(div_boundary)
+    
     os.makedirs(savepath, exist_ok=True)
     ending = ".pdf" if save_as_pdf else ".png"
 
@@ -26,7 +27,7 @@ def save_image_co(image_tensor, where, image_name, channels, savepath, single_ch
     cmap_B = c.LinearSegmentedColormap.from_list("cmap_B", ['yellow', 'white',
                                                             '#00f'])
 
-    boundary_red = max(torch.max(image_tensor[0]), -torch.min(image_tensor[0]))/5
+    boundary_red = max(torch.max(image_tensor[0]), -torch.min(image_tensor[0]))/div_boundary
 
 
     img_norm = (image_tensor - torch.min(image_tensor)) / (torch.max(image_tensor) - torch.min(image_tensor))
@@ -38,8 +39,8 @@ def save_image_co(image_tensor, where, image_name, channels, savepath, single_ch
                    vmax=boundary_red)
 
     if channels > 1 and single_channel_images:
-        boundary_green = max(torch.max(image_tensor[1]), -torch.min(image_tensor[1]))/5
-        boundary_blue = max(torch.max(image_tensor[2]), -torch.min(image_tensor[2]))/5
+        boundary_green = max(torch.max(image_tensor[1]), -torch.min(image_tensor[1]))/div_boundary
+        boundary_blue = max(torch.max(image_tensor[2]), -torch.min(image_tensor[2]))/div_boundary
         mpimage.imsave("" + savepath + "/" + image_name + "-rg" + ending, image_tensor[1].detach().cpu(), cmap=cmap_G,
                        vmin=-boundary_green, vmax=boundary_green)
         mpimage.imsave("" + savepath + "/" + image_name + "-bg" + ending, image_tensor[2].detach().cpu(), cmap=cmap_B,
@@ -47,7 +48,7 @@ def save_image_co(image_tensor, where, image_name, channels, savepath, single_ch
 
     plt.close()
 
-def save_image_bw(image_tensor, where, image_name, channels, savepath, single_channel_images=True, save_as_pdf=False):
+def save_image_bw(image_tensor, where, image_name, channels, savepath, single_channel_images=True, save_as_pdf=False, div_boundary=5):
 
 
     ending = ".pdf" if save_as_pdf else ".png"
@@ -58,7 +59,7 @@ def save_image_bw(image_tensor, where, image_name, channels, savepath, single_ch
                                                  ['black', 'white', 'black'])  # hier sind die colormaps definiert, in denen die channel angezeigt werden
 
 
-    boundary_red = max(torch.max(image_tensor[0]), -torch.min(image_tensor[0]))/5
+    boundary_red = max(torch.max(image_tensor[0]), -torch.min(image_tensor[0]))/div_boundary
 
     f, axarr = plt.subplots(5, 4, figsize=(20, 20))
 
@@ -71,8 +72,8 @@ def save_image_bw(image_tensor, where, image_name, channels, savepath, single_ch
                    vmin=-boundary_red, vmax=boundary_red)
 
     if False and channels > 1 and single_channel_images:
-        boundary_green = max(torch.max(image_tensor[1]), -torch.min(image_tensor[1]))/5
-        boundary_blue = max(torch.max(image_tensor[2]), -torch.min(image_tensor[2]))/5
+        boundary_green = max(torch.max(image_tensor[1]), -torch.min(image_tensor[1]))/div_boundary
+        boundary_blue = max(torch.max(image_tensor[2]), -torch.min(image_tensor[2]))/div_boundary
         mpimage.imsave("" + savepath + "/" + image_name + "-rg" + ending, image_tensor[1].detach().cpu(), cmap=cmap_R,
                        vmin=-boundary_green, vmax=boundary_green)
         mpimage.imsave("" + savepath + "/" + image_name + "-bg" + ending, image_tensor[2].detach().cpu(), cmap=cmap_R,
@@ -80,7 +81,7 @@ def save_image_bw(image_tensor, where, image_name, channels, savepath, single_ch
 
     plt.close()
 
-def save_image_rgb(image_tensor, where, image_name, channels, savepath, single_channel_images=True, save_as_pdf=False):
+def save_image_rgb(image_tensor, where, image_name, channels, savepath, single_channel_images=True, save_as_pdf=False, div_boundary=5):
 
     ending = ".pdf" if save_as_pdf else ".png"
 
@@ -95,7 +96,7 @@ def save_image_rgb(image_tensor, where, image_name, channels, savepath, single_c
                                                             '#0f0'])  # in denen die channel angezeigt werden
     cmap_B = c.LinearSegmentedColormap.from_list("cmap_B", ['black', 'white', '#00f'])
 
-    boundary_red = max(torch.max(image_tensor[0]), -torch.min(image_tensor[0]))/5
+    boundary_red = max(torch.max(image_tensor[0]), -torch.min(image_tensor[0]))/div_boundary
 
     f, axarr = plt.subplots(5, 4, figsize=(20, 20))
 
@@ -107,8 +108,8 @@ def save_image_rgb(image_tensor, where, image_name, channels, savepath, single_c
                    vmin=-boundary_red, vmax=boundary_red)
 
     if channels > 1 and single_channel_images:
-        boundary_green = max(torch.max(image_tensor[1]), -torch.min(image_tensor[1]))/5
-        boundary_blue = max(torch.max(image_tensor[2]), -torch.min(image_tensor[2]))/5
+        boundary_green = max(torch.max(image_tensor[1]), -torch.min(image_tensor[1]))/div_boundary
+        boundary_blue = max(torch.max(image_tensor[2]), -torch.min(image_tensor[2]))/div_boundary
         mpimage.imsave("" + savepath + "/" + image_name + "-g" + ending, image_tensor[1].detach().cpu(), cmap=cmap_G,
                        vmin=-boundary_green, vmax=boundary_green)
         mpimage.imsave("" + savepath + "/" + image_name + "-b" + ending, image_tensor[2].detach().cpu(), cmap=cmap_B,
