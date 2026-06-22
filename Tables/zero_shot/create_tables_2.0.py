@@ -1,8 +1,7 @@
 import pandas as pd
-import os
 
 # === Einstellungen ===
-data_path = "/home/lstracke/blur_preprocessing/blur_preprocessing_git/work_dir/metrics_averaged_over_seed_7.0.csv"
+data_path = "/home/lstracke/blur_preprocessing/blur_preprocessing_git/work_dir_zero_shot/metrics_averaged_over_five_seed_dataset.csv"
 
 # Reihenfolge der Preprocessings + Anzeige Namen
 preprocessing_map = {
@@ -122,7 +121,7 @@ Architecture & Preprocessing & Sparsity & mIoU & mAcc & aAcc \\
 
         # === LaTeX-Tabelle speichern ===
         latex_table = "\n".join([header] + rows + [footer])
-        out_path = f"generated_table_for_{architecture}_{dataset}_zero_shot_combined.tex"
+        out_path = f"generated_table_for_{architecture}_{dataset}_zero_shot_five_seeds.tex"
 
         with open(out_path, "w") as f:
             f.write(latex_table)

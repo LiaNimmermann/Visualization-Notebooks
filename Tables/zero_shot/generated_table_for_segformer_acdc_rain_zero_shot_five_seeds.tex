@@ -1,0 +1,62 @@
+\begin{table}[h]
+\centering
+\caption{Results for the segformer architecture validated on acdc_rain at different sparsities.}
+\begin{tabular}{@{}lccc ccc@{}}
+\toprule
+Architecture & Preprocessing & Sparsity & mIoU & mAcc & aAcc \\
+\midrule
+
+\multirow{4}{*}{SegFormer} & - & \multirow{4}{*}{-} & 46.07~$\pm$~1.20 & 64.95~$\pm$~1.36 & 87.03~$\pm$~1.06 \\
+& Luminance & & 37.82~$\pm$~1.16 & 50.67~$\pm$~2.48 & 82.64~$\pm$~1.73 \\
+& Color-opponency & & 43.55~$\pm$~1.64 & 57.94~$\pm$~3.74 & 86.93~$\pm$~0.81 \\
+& Single-color & & 42.01~$\pm$~1.20 & 57.41~$\pm$~1.31 & 85.79~$\pm$~1.67 \\
+\midrule
+\multirow{4}{*}{SegFormer} & - & \multirow{4}{*}{10\%} & 45.04~$\pm$~0.87 & 64.69~$\pm$~1.14 & 85.45~$\pm$~1.08 \\
+& Luminance & & 37.86~$\pm$~1.16 & 50.68~$\pm$~2.48 & 82.75~$\pm$~1.69 \\
+& Color-opponency & & 43.55~$\pm$~1.63 & 57.95~$\pm$~3.74 & 86.93~$\pm$~0.81 \\
+& Single-color & & 42.03~$\pm$~1.19 & 57.41~$\pm$~1.31 & 85.83~$\pm$~1.65 \\
+\midrule
+\multirow{4}{*}{SegFormer} & - & \multirow{4}{*}{20\%} & 38.89~$\pm$~0.27 & 56.65~$\pm$~0.38 & 80.77~$\pm$~0.99 \\
+& Luminance & & 38.09~$\pm$~1.14 & 50.78~$\pm$~2.49 & 83.36~$\pm$~1.53 \\
+& Color-opponency & & 43.56~$\pm$~1.64 & 57.95~$\pm$~3.74 & 86.94~$\pm$~0.81 \\
+& Single-color & & 42.08~$\pm$~1.14 & 57.37~$\pm$~1.30 & 85.98~$\pm$~1.54 \\
+\midrule
+\multirow{4}{*}{SegFormer} & - & \multirow{4}{*}{30\%} & 30.87~$\pm$~0.92 & 44.27~$\pm$~1.14 & 74.75~$\pm$~0.43 \\
+& Luminance & & 38.50~$\pm$~1.15 & 51.00~$\pm$~2.52 & 84.19~$\pm$~1.37 \\
+& Color-opponency & & 43.55~$\pm$~1.64 & 57.90~$\pm$~3.75 & 86.96~$\pm$~0.80 \\
+& Single-color & & 42.10~$\pm$~1.15 & 57.33~$\pm$~1.33 & 86.12~$\pm$~1.45 \\
+\midrule
+\multirow{4}{*}{SegFormer} & - & \multirow{4}{*}{40\%} & 22.68~$\pm$~1.03 & 31.40~$\pm$~1.49 & 69.50~$\pm$~0.43 \\
+& Luminance & & 38.77~$\pm$~1.18 & 50.93~$\pm$~2.56 & 84.71~$\pm$~1.24 \\
+& Color-opponency & & 43.46~$\pm$~1.66 & 57.68~$\pm$~3.78 & 87.00~$\pm$~0.77 \\
+& Single-color & & 42.00~$\pm$~1.13 & 56.91~$\pm$~1.31 & 86.19~$\pm$~1.40 \\
+\midrule
+\multirow{4}{*}{SegFormer} & - & \multirow{4}{*}{50\%} & 17.59~$\pm$~0.66 & 24.13~$\pm$~0.55 & 65.89~$\pm$~0.47 \\
+& Luminance & & 38.26~$\pm$~1.06 & 49.56~$\pm$~2.45 & 84.56~$\pm$~1.16 \\
+& Color-opponency & & 43.33~$\pm$~1.71 & 57.36~$\pm$~3.85 & 87.03~$\pm$~0.73 \\
+& Single-color & & 41.42~$\pm$~0.94 & 55.80~$\pm$~1.27 & 86.06~$\pm$~1.23 \\
+\midrule
+\multirow{4}{*}{SegFormer} & - & \multirow{4}{*}{60\%} & 13.75~$\pm$~0.22 & 19.19~$\pm$~0.05 & 62.86~$\pm$~0.50 \\
+& Luminance & & 35.86~$\pm$~0.99 & 45.76~$\pm$~2.22 & 82.98~$\pm$~1.39 \\
+& Color-opponency & & 42.94~$\pm$~1.76 & 56.58~$\pm$~3.81 & 86.94~$\pm$~0.71 \\
+& Single-color & & 39.75~$\pm$~0.98 & 53.10~$\pm$~0.91 & 85.08~$\pm$~1.20 \\
+\midrule
+\multirow{4}{*}{SegFormer} & - & \multirow{4}{*}{70\%} & 11.11~$\pm$~0.25 & 15.38~$\pm$~0.35 & 60.21~$\pm$~1.08 \\
+& Luminance & & 31.72~$\pm$~0.89 & 40.62~$\pm$~1.52 & 79.40~$\pm$~1.52 \\
+& Color-opponency & & 41.83~$\pm$~1.85 & 54.91~$\pm$~3.87 & 86.54~$\pm$~0.75 \\
+& Single-color & & 35.75~$\pm$~1.08 & 47.17~$\pm$~1.00 & 82.44~$\pm$~1.48 \\
+\midrule
+\multirow{4}{*}{SegFormer} & - & \multirow{4}{*}{80\%} & 9.06~$\pm$~0.60 & 13.06~$\pm$~0.82 & 56.81~$\pm$~1.52 \\
+& Luminance & & 24.74~$\pm$~0.77 & 31.96~$\pm$~0.78 & 73.06~$\pm$~1.06 \\
+& Color-opponency & & 39.11~$\pm$~2.06 & 50.48~$\pm$~3.83 & 85.73~$\pm$~0.79 \\
+& Single-color & & 28.25~$\pm$~1.20 & 36.86~$\pm$~0.68 & 77.39~$\pm$~2.17 \\
+\midrule
+\multirow{4}{*}{SegFormer} & - & \multirow{4}{*}{90\%} & 6.69~$\pm$~0.56 & 10.83~$\pm$~0.86 & 45.85~$\pm$~2.00 \\
+& Luminance & & 16.78~$\pm$~0.35 & 22.08~$\pm$~0.57 & 66.68~$\pm$~1.45 \\
+& Color-opponency & & 30.09~$\pm$~2.82 & 37.83~$\pm$~3.84 & 80.01~$\pm$~1.82 \\
+& Single-color & & 20.15~$\pm$~1.83 & 26.32~$\pm$~1.96 & 70.25~$\pm$~3.39 \\
+\midrule
+\bottomrule
+\end{tabular}
+\label{tab:sparse_results_segformer_acdc_rain}
+\end{table}

@@ -1,0 +1,62 @@
+\begin{table}[h]
+\centering
+\caption{Results for the mask2former architecture validated on dark_zurich at different sparsities.}
+\begin{tabular}{@{}lccc ccc@{}}
+\toprule
+Architecture & Preprocessing & Sparsity & mIoU & mAcc & aAcc \\
+\midrule
+
+\multirow{4}{*}{Mask2Former} & - & \multirow{4}{*}{-} & 17.79~$\pm$~1.07 & 28.68~$\pm$~2.43 & 44.34~$\pm$~6.12 \\
+& Luminance & & 26.81~$\pm$~1.32 & 41.31~$\pm$~2.05 & 59.84~$\pm$~2.64 \\
+& Color-opponency & & 23.36~$\pm$~2.00 & 37.83~$\pm$~2.57 & 55.64~$\pm$~2.33 \\
+& Single-color & & 25.00~$\pm$~0.78 & 39.93~$\pm$~1.78 & 57.60~$\pm$~2.79 \\
+\midrule
+\multirow{4}{*}{Mask2Former} & - & \multirow{4}{*}{10\%} & 13.47~$\pm$~1.93 & 23.16~$\pm$~3.95 & 37.62~$\pm$~7.42 \\
+& Luminance & & 26.82~$\pm$~1.29 & 41.27~$\pm$~2.02 & 59.76~$\pm$~2.64 \\
+& Color-opponency & & 23.36~$\pm$~1.98 & 37.80~$\pm$~2.53 & 55.62~$\pm$~2.32 \\
+& Single-color & & 24.95~$\pm$~0.89 & 39.96~$\pm$~1.81 & 57.67~$\pm$~2.88 \\
+\midrule
+\multirow{4}{*}{Mask2Former} & - & \multirow{4}{*}{20\%} & 7.83~$\pm$~1.85 & 15.46~$\pm$~4.14 & 26.00~$\pm$~9.48 \\
+& Luminance & & 26.77~$\pm$~1.43 & 41.38~$\pm$~1.74 & 59.74~$\pm$~2.48 \\
+& Color-opponency & & 23.33~$\pm$~1.93 & 37.75~$\pm$~2.47 & 55.54~$\pm$~2.25 \\
+& Single-color & & 25.19~$\pm$~0.88 & 40.29~$\pm$~1.99 & 58.20~$\pm$~2.89 \\
+\midrule
+\multirow{4}{*}{Mask2Former} & - & \multirow{4}{*}{30\%} & 4.92~$\pm$~1.59 & 10.77~$\pm$~3.31 & 20.09~$\pm$~8.50 \\
+& Luminance & & 27.14~$\pm$~1.29 & 41.88~$\pm$~1.68 & 59.83~$\pm$~2.39 \\
+& Color-opponency & & 23.36~$\pm$~1.92 & 37.70~$\pm$~2.51 & 55.51~$\pm$~2.27 \\
+& Single-color & & 25.68~$\pm$~0.97 & 40.55~$\pm$~1.97 & 58.45~$\pm$~2.87 \\
+\midrule
+\multirow{4}{*}{Mask2Former} & - & \multirow{4}{*}{40\%} & 3.61~$\pm$~1.09 & 9.53~$\pm$~2.40 & 21.30~$\pm$~7.72 \\
+& Luminance & & 27.27~$\pm$~1.00 & 42.28~$\pm$~1.09 & 59.81~$\pm$~1.95 \\
+& Color-opponency & & 23.34~$\pm$~1.98 & 37.58~$\pm$~2.57 & 55.59~$\pm$~2.38 \\
+& Single-color & & 25.64~$\pm$~1.09 & 40.47~$\pm$~1.89 & 58.45~$\pm$~2.59 \\
+\midrule
+\multirow{4}{*}{Mask2Former} & - & \multirow{4}{*}{50\%} & 4.31~$\pm$~1.03 & 10.79~$\pm$~2.03 & 24.86~$\pm$~7.72 \\
+& Luminance & & 27.23~$\pm$~1.23 & 42.44~$\pm$~1.39 & 59.84~$\pm$~2.40 \\
+& Color-opponency & & 23.47~$\pm$~1.94 & 37.73~$\pm$~2.45 & 55.61~$\pm$~2.41 \\
+& Single-color & & 26.40~$\pm$~0.88 & 41.26~$\pm$~1.94 & 59.81~$\pm$~2.75 \\
+\midrule
+\multirow{4}{*}{Mask2Former} & - & \multirow{4}{*}{60\%} & 4.93~$\pm$~0.97 & 10.67~$\pm$~1.59 & 27.84~$\pm$~6.63 \\
+& Luminance & & 27.67~$\pm$~1.45 & 42.90~$\pm$~1.22 & 61.06~$\pm$~4.08 \\
+& Color-opponency & & 23.26~$\pm$~1.86 & 37.70~$\pm$~2.18 & 55.74~$\pm$~2.52 \\
+& Single-color & & 26.16~$\pm$~1.32 & 41.24~$\pm$~2.66 & 60.66~$\pm$~2.89 \\
+\midrule
+\multirow{4}{*}{Mask2Former} & - & \multirow{4}{*}{70\%} & 5.78~$\pm$~0.89 & 11.46~$\pm$~1.38 & 29.72~$\pm$~5.18 \\
+& Luminance & & 27.46~$\pm$~2.34 & 42.84~$\pm$~2.33 & 62.61~$\pm$~6.17 \\
+& Color-opponency & & 23.69~$\pm$~1.46 & 38.58~$\pm$~2.37 & 56.12~$\pm$~2.19 \\
+& Single-color & & 26.38~$\pm$~1.46 & 41.25~$\pm$~2.05 & 61.60~$\pm$~3.56 \\
+\midrule
+\multirow{4}{*}{Mask2Former} & - & \multirow{4}{*}{80\%} & 6.24~$\pm$~0.71 & 12.01~$\pm$~1.06 & 32.84~$\pm$~4.31 \\
+& Luminance & & 24.98~$\pm$~1.33 & 41.00~$\pm$~1.73 & 60.57~$\pm$~4.10 \\
+& Color-opponency & & 23.88~$\pm$~1.19 & 39.41~$\pm$~1.39 & 56.24~$\pm$~1.70 \\
+& Single-color & & 24.80~$\pm$~0.76 & 39.66~$\pm$~1.74 & 60.72~$\pm$~2.49 \\
+\midrule
+\multirow{4}{*}{Mask2Former} & - & \multirow{4}{*}{90\%} & 6.12~$\pm$~0.69 & 12.15~$\pm$~0.72 & 34.42~$\pm$~3.69 \\
+& Luminance & & 17.67~$\pm$~1.40 & 32.50~$\pm$~1.31 & 48.35~$\pm$~4.68 \\
+& Color-opponency & & 23.54~$\pm$~1.30 & 38.86~$\pm$~1.33 & 55.36~$\pm$~1.23 \\
+& Single-color & & 20.21~$\pm$~1.55 & 33.88~$\pm$~1.48 & 53.52~$\pm$~6.47 \\
+\midrule
+\bottomrule
+\end{tabular}
+\label{tab:sparse_results_mask2former_dark_zurich}
+\end{table}
